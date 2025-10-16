@@ -1,0 +1,316 @@
+BPBPBPB{<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="x-dns-prefetch-control" content="off">
+BPBPBPB}BPBPBPB{<script type="text/javascript" language="JavaScript">
+<!--
+if (self != top) { try { if (document.domain != top.document.domain) { throw "Clickjacking security violation! Please log out immediately!"; /* this code should never execute - exception should already have been thrown since it's a security violation in this case to even try to access top.document.domain (but it's left here just to be extra safe) */ } } catch (e) { self.location = "/squirrelmail/src/signout.php"; top.location = "/squirrelmail/src/signout.php" } }
+// -->
+</script>
+BPBPBPB}
+<title>BPBPBPB{SquirrelMail 1.4.23 [SVN]BPBPBPB}</title>BPBPBPB{<script language="JavaScript" type="text/javascript">
+<!--
+function checkForm() {
+   var f = document.forms.length;
+   var i = 0;
+   var pos = -1;
+   while( pos == -1 && i < f ) {
+       var e = document.forms[i].elements.length;
+       var j = 0;
+       while( pos == -1 && j < e ) {
+           if ( document.forms[i].elements[j].type == 'text'            || document.forms[i].elements[j].type == 'password' ) {
+               pos = j;
+           }
+           j++;
+       }
+   i++;
+   }
+   if( pos >= 0 ) {
+       document.forms[i-1].elements[pos].focus();
+   }
+   
+}
+// -->
+</script>
+BPBPBPB}
+<!--[if IE 6]>
+<style type="text/css">
+/* avoid stupid IE6 bug with frames and scrollbars */
+body {
+    width: expression(document.documentElement.clientWidth - 30);
+}
+</style>
+<![endif]-->
+
+</head>
+
+<body text="#000000" bgcolor="#ffffff" link="#0000cc" vlink="#0000cc" alink="#0000cc" onload="checkForm();">
+
+<a name="pagetop"></a>
+<table bgcolor="#ffffff" border="0" width="100%" cellspacing="0" cellpadding="2">
+
+<tr bgcolor="#ababab">
+
+<td align="left">
+
+         Current Folder: <b>INBOX&nbsp;</b>
+      </td>
+<td align="right">
+<b>
+<a href="/squirrelmail/src/signout.php" target="_top">Sign Out</a></b></td>
+   </tr>
+<tr bgcolor="#ffffff">
+
+<td align="left">
+
+<a href="/squirrelmail/src/compose.php?mailbox=INBOX&amp;startMessage=31">Compose</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/addressbook.php">Addresses</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/folders.php">Folders</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/options.php">Options</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/search.php?mailbox=INBOX">Search</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/help.php">Help</a>&nbsp;&nbsp;
+      </td>
+<td align="right">
+
+<a href="http://squirrelmail.org/" target="_blank">SquirrelMail</a></td>
+   </tr>
+</table><br>
+
+<form name="FormMsgsINBOX" method="post" action="move_messages.php">
+<input type="hidden" name="smtoken" value="vjbBGkp6XHEi">
+<input type="hidden" name="mailbox" value="INBOX">
+<input type="hidden" name="startMessage" value="BPBPBPB{31BPBPBPB}">
+<table border="0" width="100%" cellpadding="0" cellspacing="0"><tr><td><table border="0" width="100%" cellpadding="1"  cellspacing="0"><tr bgcolor="#dcdcdc"><td align="left"><table bgcolor="#ffffff" border="0" width="100%" cellpadding="1"  cellspacing="0"><tr><td align="left">BPBPBPB{<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=16&amp;mailbox=INBOX" >Previous</a>&nbsp;|&nbsp;<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=46&amp;mailbox=INBOX" >Next</a>&nbsp;|&nbsp;<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=1&amp;mailbox=INBOX" >1</a>&nbsp;<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=16&amp;mailbox=INBOX" >2</a>&nbsp;3&nbsp;<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=46&amp;mailbox=INBOX" >4</a>&nbsp;<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=61&amp;mailbox=INBOX" >5</a>&nbsp;<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=76&amp;mailbox=INBOX" >6</a>&nbsp;<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=91&amp;mailbox=INBOX" >7</a>&nbsp;<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=106&amp;mailbox=INBOX" >8</a>&nbsp;...&nbsp;<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=1501&amp;mailbox=INBOX" >101</a>&nbsp;<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=1516&amp;mailbox=INBOX" >102</a>&nbsp;<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=1531&amp;mailbox=INBOX" >103</a>&nbsp;|&nbsp;<a href="right_main.php?PG_SHOWALL=1&amp;use_mailbox_cache=0&amp;startMessage=1&amp;mailbox=INBOX" >Show All</a>&nbsp;|&nbsp;<script language="JavaScript" type="text/javascript">
+<!-- 
+function CheckAllINBOX() {
+  for (var i = 0; i < document.FormMsgsINBOX.elements.length; i++) {
+    if(document.FormMsgsINBOX.elements[i].type == 'checkbox'){
+      document.FormMsgsINBOX.elements[i].checked =         !(document.FormMsgsINBOX.elements[i].checked);
+    }
+  }
+}
+//-->
+</script><a href="javascript:void(0)" onClick="CheckAllINBOX();">Toggle All</a>
+BPBPBPB}</td>
+<td align="right">BPBPBPB{Viewing Messages: <b>31</b> to <b>45</b> (1541 total)BPBPBPB}</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td></tr><tr><td height="5" bgcolor="#ffffff"></td></tr><tr>
+
+<td align="left">
+<table bgcolor="#ababab" border="0" width="100%" cellpadding="1"  cellspacing="0">
+<tr><td><table bgcolor="#dcdcdc" border="0" width="100%" cellpadding="1"  cellspacing="0">
+<tr><td align="left" nowrap><small>Move Selected To:&nbsp; </small></td>
+<td align="right" nowrap><small>Transform Selected Messages:&nbsp; </small></td>
+</tr>
+<tr>
+
+<td align="left" valign="middle" nowrap>
+         <small>&nbsp;<tt><select name="targetMailbox">BPBPBPB{<option value="INBOX">INBOX</option>
+<option value="INBOX.Drafts">INBOX.Drafts</option>
+<option value="INBOX.Sent">INBOX.Sent</option>
+<option value="INBOX.Trash">INBOX.Trash</option>
+<option value="[Gmail]/All Mail">&nbsp;&nbsp;All Mail</option>
+<option value="[Gmail]/Drafts">&nbsp;&nbsp;Drafts</option>
+<option value="[Gmail]/Important">&nbsp;&nbsp;Important</option>
+<option value="[Gmail]/Sent Mail">&nbsp;&nbsp;Sent Mail</option>
+<option value="[Gmail]/Spam">&nbsp;&nbsp;Spam</option>
+<option value="[Gmail]/Starred">&nbsp;&nbsp;Starred</option>
+<option value="[Gmail]/Trash">&nbsp;&nbsp;Trash</option>
+BPBPBPB}         </select></tt>&nbsp;<input type="SUBMIT" name="moveButton" value="Move">
+<input type="SUBMIT" name="attache" value="Forward">
+      </small></td>
+<td align="right" nowrap>
+<input type="SUBMIT" name="markRead" value="Read">
+<input type="SUBMIT" name="markUnread" value="Unread">
+<input type="SUBMIT" name="delete" value="Delete">&nbsp;
+<input type="hidden" name="location" value="/squirrelmail/src/right_main.php?use_mailbox_cache=0&amp;startMessage=31&amp;mailbox=INBOX"></td>
+   </tr>
+</table></td></tr></table></td></tr>
+<tr><td height="5" bgcolor="#ffffff"></td></tr><tr><td>    <table width="100%" cellpadding="1" cellspacing="0" align="center" border="0" bgcolor="#ababab">     <tr><td>       <table width="100%" cellpadding="1" cellspacing="0" align="center" border="0" bgcolor="#ffffcc"><tr bgcolor="#ffffcc" align="center">
+<td width="1%">&nbsp;</td>
+<td align="left" width="25%">
+<b>From</b> <a href="/squirrelmail/src/right_main.php?newsort=2&amp;startMessage=1&amp;mailbox=INBOX"><img src="../images/sort_none.png" border="0" width="12" height="10" alt="sort"></a></td>
+<td align="left" width="5%" nowrap>
+<b>Date</b> <a href="/squirrelmail/src/right_main.php?newsort=0&amp;startMessage=1&amp;mailbox=INBOX"><img src="../images/sort_none.png" border="0" width="12" height="10" alt="sort"></a></td>
+<td width="1%">&nbsp;</td>
+<td align="left" width="68%">
+<b>Subject</b> <a href="/squirrelmail/src/right_main.php?newsort=4&amp;startMessage=1&amp;mailbox=INBOX"><img src="../images/sort_none.png" border="0" width="12" height="10" alt="sort"></a></td>
+</tr>
+<tr valign="top">
+
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center"><input type="checkbox" name="msg[0]" id="msgBPBPBPB{1537BPBPBPB}" value="1537"></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="left" title="BPBPBPB{my-saved-home@mail.zillow.comBPBPBPB}"><label for="msgBPBPBPB{1537BPBPBPB}"><b>BPBPBPB{ZillowBPBPBPB}</b></label>
+</td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center" nowrap><b>BPBPBPB{Apr 24, 2019BPBPBPB}</b></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center" nowrap><b><small>&nbsp;</small></b></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="left"><b><a href="read_body.php?mailbox=BPBPBPB{INBOXBPBPBPB}&amp;passed_id=BPBPBPB{1537BPBPBPB}&amp;startMessage=BPBPBPB{31BPBPBPB}"  title="BPBPBPB{Your&#32;Home&#32;Report&#32;for&#32;1401&#32;S&#32;Saint&#32;Andrews&#32;Pl&#32;APT&#32;202&#32;-&#32;Values,&#32;Forecast,&#32;Neighborhood&#32;ActivityBPBPBPB}">BPBPBPB{Your&#32;Home&#32;Report&#32;for&#32;1401&#32;S&#32;Saint&#32;Andrews&#32;Pl&#32;APT&#32;2...BPBPBPB}</a></b></td>
+</tr>
+<tr><td colspan="5" bgcolor="#dcdcdc" height="1"></td></tr>
+<tr valign="top">
+
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="center"><input type="checkbox" name="msg[1]" id="msgBPBPBPB{1536BPBPBPB}" value="1536"></td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="left" title="BPBPBPB{CenturyCity@emails.westfield.comBPBPBPB}"><label for="msgBPBPBPB{1536BPBPBPB}"><b>BPBPBPB{Westfield&#32;Century&#32;CityBPBPBPB}</b></label>
+</td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="center" nowrap><b>BPBPBPB{Apr 23, 2019BPBPBPB}</b></td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="center" nowrap><b><small>&nbsp;</small></b></td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="left"><b><a href="read_body.php?mailbox=BPBPBPB{INBOXBPBPBPB}&amp;passed_id=BPBPBPB{1536BPBPBPB}&amp;startMessage=BPBPBPB{31BPBPBPB}" >BPBPBPB{Receive&#32;$10&#32;on&#32;Your&#32;Next&#32;PurchaseBPBPBPB}</a></b></td>
+</tr>
+<tr><td colspan="5" bgcolor="#dcdcdc" height="1"></td></tr>
+<tr valign="top">
+
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center"><input type="checkbox" name="msg[2]" id="msgBPBPBPB{1535BPBPBPB}" value="1535"></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="left" title="BPBPBPB{communityorders@equalexchange.coopBPBPBPB}"><label for="msgBPBPBPB{1535BPBPBPB}"><b>BPBPBPB{Equal&#32;ExchangeBPBPBPB}</b></label>
+</td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center" nowrap><b>BPBPBPB{Apr 23, 2019BPBPBPB}</b></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center" nowrap><b><small>&nbsp;</small></b></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="left"><b><a href="read_body.php?mailbox=BPBPBPB{INBOXBPBPBPB}&amp;passed_id=BPBPBPB{1535BPBPBPB}&amp;startMessage=BPBPBPB{31BPBPBPB}"  title="BPBPBPB{What&#8217;s the difference, anyway? Standing with farmers in the US and around the world.BPBPBPB}">BPBPBPB{What&#8217;s the difference, anyway? Standing with farme...BPBPBPB}</a></b></td>
+</tr>
+<tr><td colspan="5" bgcolor="#dcdcdc" height="1"></td></tr>
+<tr valign="top">
+
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="center"><input type="checkbox" name="msg[3]" id="msgBPBPBPB{1534BPBPBPB}" value="1534"></td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="left" title="BPBPBPB{digest-noreply@quora.comBPBPBPB}"><label for="msgBPBPBPB{1534BPBPBPB}"><b>BPBPBPB{Quora&#32;DigestBPBPBPB}</b></label>
+</td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="center" nowrap><b>BPBPBPB{Apr 22, 2019BPBPBPB}</b></td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="center" nowrap><b><small>&nbsp;</small></b></td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="left"><b><a href="read_body.php?mailbox=BPBPBPB{INBOXBPBPBPB}&amp;passed_id=BPBPBPB{1534BPBPBPB}&amp;startMessage=BPBPBPB{31BPBPBPB}"  title="BPBPBPB{What major coding language is not worth learning because it is being used less and less?BPBPBPB}">BPBPBPB{What major coding language is not worth learning b...BPBPBPB}</a></b></td>
+</tr>
+<tr><td colspan="5" bgcolor="#dcdcdc" height="1"></td></tr>
+<tr valign="top">
+
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center"><input type="checkbox" name="msg[4]" id="msgBPBPBPB{1533BPBPBPB}" value="1533"></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="left" title="BPBPBPB{noreply@medium.comBPBPBPB}"><label for="msgBPBPBPB{1533BPBPBPB}"><b>BPBPBPB{Medium&#32;Daily&#32;DigestBPBPBPB}</b></label>
+</td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center" nowrap><b>BPBPBPB{Apr 21, 2019BPBPBPB}</b></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center" nowrap><b><small>&nbsp;</small></b></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="left"><b><a href="read_body.php?mailbox=BPBPBPB{INBOXBPBPBPB}&amp;passed_id=BPBPBPB{1533BPBPBPB}&amp;startMessage=BPBPBPB{31BPBPBPB}"  title="BPBPBPB{&#8220;A Modest Privacy Protection Proposal&#8221; published by Jameson LoppBPBPBPB}">BPBPBPB{&#8220;A Modest Privacy Protection Proposal&#8221; published b...BPBPBPB}</a></b></td>
+</tr>
+<tr><td colspan="5" bgcolor="#dcdcdc" height="1"></td></tr>
+<tr valign="top">
+
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="center"><input type="checkbox" name="msg[5]" id="msgBPBPBPB{1532BPBPBPB}" value="1532"></td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="left" title="BPBPBPB{digest-noreply@quora.comBPBPBPB}"><label for="msgBPBPBPB{1532BPBPBPB}"><b>BPBPBPB{Quora&#32;DigestBPBPBPB}</b></label>
+</td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="center" nowrap><b>BPBPBPB{Apr 20, 2019BPBPBPB}</b></td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="center" nowrap><b><small>&nbsp;</small></b></td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="left"><b><a href="read_body.php?mailbox=BPBPBPB{INBOXBPBPBPB}&amp;passed_id=BPBPBPB{1532BPBPBPB}&amp;startMessage=BPBPBPB{31BPBPBPB}" >BPBPBPB{Who was the richest United States president?BPBPBPB}</a></b></td>
+</tr>
+<tr><td colspan="5" bgcolor="#dcdcdc" height="1"></td></tr>
+<tr valign="top">
+
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center"><input type="checkbox" name="msg[6]" id="msgBPBPBPB{1531BPBPBPB}" value="1531"></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="left" title="BPBPBPB{noreply@medium.comBPBPBPB}"><label for="msgBPBPBPB{1531BPBPBPB}"><b>BPBPBPB{Medium&#32;Daily&#32;DigestBPBPBPB}</b></label>
+</td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center" nowrap><b>BPBPBPB{Apr 20, 2019BPBPBPB}</b></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center" nowrap><b><small>&nbsp;</small></b></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="left"><b><a href="read_body.php?mailbox=BPBPBPB{INBOXBPBPBPB}&amp;passed_id=BPBPBPB{1531BPBPBPB}&amp;startMessage=BPBPBPB{31BPBPBPB}"  title="BPBPBPB{&#8220;Integer Factorization &#8212; Defining The Limits of RSA Cracking&#8221; published in Coinmonks by Prof Bill Buchanan OBEBPBPBPB}">BPBPBPB{&#8220;Integer Factorization &#8212; Defining The Limits of RS...BPBPBPB}</a></b></td>
+</tr>
+<tr><td colspan="5" bgcolor="#dcdcdc" height="1"></td></tr>
+<tr valign="top">
+
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="center"><input type="checkbox" name="msg[7]" id="msgBPBPBPB{1530BPBPBPB}" value="1530"></td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="left" title="BPBPBPB{digest-noreply@quora.comBPBPBPB}"><label for="msgBPBPBPB{1530BPBPBPB}"><b>BPBPBPB{Quora&#32;DigestBPBPBPB}</b></label>
+</td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="center" nowrap><b>BPBPBPB{Apr 19, 2019BPBPBPB}</b></td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="center" nowrap><b><small>&nbsp;</small></b></td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="left"><b><a href="read_body.php?mailbox=BPBPBPB{INBOXBPBPBPB}&amp;passed_id=BPBPBPB{1530BPBPBPB}&amp;startMessage=BPBPBPB{31BPBPBPB}"  title="BPBPBPB{I feel no sympathy for the homeless because I feel like it is their own fault. Are th...?BPBPBPB}">BPBPBPB{I feel no sympathy for the homeless because I feel...BPBPBPB}</a></b></td>
+</tr>
+<tr><td colspan="5" bgcolor="#dcdcdc" height="1"></td></tr>
+<tr valign="top">
+
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center"><input type="checkbox" name="msg[8]" id="msgBPBPBPB{1529BPBPBPB}" value="1529"></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="left" title="BPBPBPB{CenturyCity@emails.westfield.comBPBPBPB}"><label for="msgBPBPBPB{1529BPBPBPB}"><b>BPBPBPB{Westfield&#32;Century&#32;CityBPBPBPB}</b></label>
+</td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center" nowrap><b>BPBPBPB{Apr 19, 2019BPBPBPB}</b></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center" nowrap><b><small>&nbsp;</small></b></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="left"><b><a href="read_body.php?mailbox=BPBPBPB{INBOXBPBPBPB}&amp;passed_id=BPBPBPB{1529BPBPBPB}&amp;startMessage=BPBPBPB{31BPBPBPB}" >BPBPBPB{Don&#8217;t Miss The Business of Fashion #BoFWest SummitBPBPBPB}</a></b></td>
+</tr>
+<tr><td colspan="5" bgcolor="#dcdcdc" height="1"></td></tr>
+<tr valign="top">
+
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="center"><input type="checkbox" name="msg[9]" id="msgBPBPBPB{1528BPBPBPB}" value="1528"></td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="left" title="BPBPBPB{noreply@medium.comBPBPBPB}"><label for="msgBPBPBPB{1528BPBPBPB}"><b>BPBPBPB{Medium&#32;Daily&#32;DigestBPBPBPB}</b></label>
+</td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="center" nowrap><b>BPBPBPB{Apr 19, 2019BPBPBPB}</b></td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="center" nowrap><b><small>&nbsp;</small></b></td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="left"><b><a href="read_body.php?mailbox=BPBPBPB{INBOXBPBPBPB}&amp;passed_id=BPBPBPB{1528BPBPBPB}&amp;startMessage=BPBPBPB{31BPBPBPB}"  title="BPBPBPB{&#8220;Clipping in Flutter&#8221; published in Flutter Community by Raouf RahicheBPBPBPB}">BPBPBPB{&#8220;Clipping in Flutter&#8221; published in Flutter Communi...BPBPBPB}</a></b></td>
+</tr>
+<tr><td colspan="5" bgcolor="#dcdcdc" height="1"></td></tr>
+<tr valign="top">
+
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center"><input type="checkbox" name="msg[10]" id="msgBPBPBPB{1527BPBPBPB}" value="1527"></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="left" title="BPBPBPB{noreply@medium.comBPBPBPB}"><label for="msgBPBPBPB{1527BPBPBPB}"><b>BPBPBPB{Medium&#32;Daily&#32;DigestBPBPBPB}</b></label>
+</td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center" nowrap><b>BPBPBPB{Apr 18, 2019BPBPBPB}</b></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center" nowrap><b><small>&nbsp;</small></b></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="left"><b><a href="read_body.php?mailbox=BPBPBPB{INBOXBPBPBPB}&amp;passed_id=BPBPBPB{1527BPBPBPB}&amp;startMessage=BPBPBPB{31BPBPBPB}"  title="BPBPBPB{&#8220;Pyramid of Doom &#8212; the Signs and Symptoms of a common anti-pattern&#8221; published in ITNEXT by Aphinya DechalertBPBPBPB}">BPBPBPB{&#8220;Pyramid of Doom &#8212; the Signs and Symptoms of a com...BPBPBPB}</a></b></td>
+</tr>
+<tr><td colspan="5" bgcolor="#dcdcdc" height="1"></td></tr>
+<tr valign="top">
+
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="center"><input type="checkbox" name="msg[11]" id="msgBPBPBPB{1526BPBPBPB}" value="1526"></td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="left" title="BPBPBPB{digest-noreply@quora.comBPBPBPB}"><label for="msgBPBPBPB{1526BPBPBPB}"><b>BPBPBPB{Quora&#32;DigestBPBPBPB}</b></label>
+</td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="center" nowrap><b>BPBPBPB{Apr 17, 2019BPBPBPB}</b></td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="center" nowrap><b><small>&nbsp;</small></b></td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="left"><b><a href="read_body.php?mailbox=BPBPBPB{INBOXBPBPBPB}&amp;passed_id=BPBPBPB{1526BPBPBPB}&amp;startMessage=BPBPBPB{31BPBPBPB}"  title="BPBPBPB{If I turned my computer off for 100 years without touching it at all and protecting i...?BPBPBPB}">BPBPBPB{If I turned my computer off for 100 years without ...BPBPBPB}</a></b></td>
+</tr>
+<tr><td colspan="5" bgcolor="#dcdcdc" height="1"></td></tr>
+<tr valign="top">
+
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center"><input type="checkbox" name="msg[12]" id="msgBPBPBPB{1525BPBPBPB}" value="1525"></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="left" title="BPBPBPB{no-reply@yelp.comBPBPBPB}"><label for="msgBPBPBPB{1525BPBPBPB}"><b>BPBPBPB{Yelp &#8211; San FranciscoBPBPBPB}</b></label>
+</td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center" nowrap><b>BPBPBPB{Apr 17, 2019BPBPBPB}</b></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center" nowrap><b><small>&nbsp;</small></b></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="left"><b><a href="read_body.php?mailbox=BPBPBPB{INBOXBPBPBPB}&amp;passed_id=BPBPBPB{1525BPBPBPB}&amp;startMessage=BPBPBPB{31BPBPBPB}" >BPBPBPB{&#128154; Get outside and celebrate Earth Day &#127758;BPBPBPB}</a></b></td>
+</tr>
+<tr><td colspan="5" bgcolor="#dcdcdc" height="1"></td></tr>
+<tr valign="top">
+
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="center"><input type="checkbox" name="msg[13]" id="msgBPBPBPB{1524BPBPBPB}" value="1524"></td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="left" title="BPBPBPB{noreply@medium.comBPBPBPB}"><label for="msgBPBPBPB{1524BPBPBPB}"><b>BPBPBPB{Medium&#32;Daily&#32;DigestBPBPBPB}</b></label>
+</td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="center" nowrap><b>BPBPBPB{Apr 17, 2019BPBPBPB}</b></td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="center" nowrap><b><small>&nbsp;</small></b></td>
+<td bgcolor="BPBPBPB{#ffffffBPBPBPB}" align="left"><b><a href="read_body.php?mailbox=BPBPBPB{INBOXBPBPBPB}&amp;passed_id=BPBPBPB{1524BPBPBPB}&amp;startMessage=BPBPBPB{31BPBPBPB}"  title="BPBPBPB{&#8220;The Reddit Router Scam&#8221; published in Hackster Blog by Alasdair AllanBPBPBPB}">BPBPBPB{&#8220;The Reddit Router Scam&#8221; published in Hackster Blo...BPBPBPB}</a></b></td>
+</tr>
+<tr><td colspan="5" bgcolor="#dcdcdc" height="1"></td></tr>
+<tr valign="top">
+
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center"><input type="checkbox" name="msg[14]" id="msgBPBPBPB{1523BPBPBPB}" value="1523"></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="left" title="BPBPBPB{noreply@medium.comBPBPBPB}"><label for="msgBPBPBPB{1523BPBPBPB}"><b>BPBPBPB{Medium&#32;Daily&#32;DigestBPBPBPB}</b></label>
+</td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center" nowrap><b>BPBPBPB{Apr 16, 2019BPBPBPB}</b></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="center" nowrap><b><small>&nbsp;</small></b></td>
+<td bgcolor="BPBPBPB{#edededBPBPBPB}" align="left"><b><a href="read_body.php?mailbox=BPBPBPB{INBOXBPBPBPB}&amp;passed_id=BPBPBPB{1523BPBPBPB}&amp;startMessage=BPBPBPB{31BPBPBPB}"  title="BPBPBPB{&#8220;Writing Change Friendly Code&#8221; published by Tapiwa MuziraBPBPBPB}">BPBPBPB{&#8220;Writing Change Friendly Code&#8221; published by Tapiwa...BPBPBPB}</a></b></td>
+</tr>
+</table></td></tr></table><tr><td height="5" bgcolor="#ffffff" colspan="1"></td></tr><tr><td><table bgcolor="#ababab" width="100%" border="0" cellpadding="1"  cellspacing="0"><tr><td><table bgcolor="#ffffff" width="100%" border="0" cellpadding="1" cellspacing="0"><tr><td>BPBPBPB{<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=16&amp;mailbox=INBOX" >Previous</a>&nbsp;|&nbsp;<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=46&amp;mailbox=INBOX" >Next</a>&nbsp;|&nbsp;<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=1&amp;mailbox=INBOX" >1</a>&nbsp;<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=16&amp;mailbox=INBOX" >2</a>&nbsp;3&nbsp;<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=46&amp;mailbox=INBOX" >4</a>&nbsp;<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=61&amp;mailbox=INBOX" >5</a>&nbsp;<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=76&amp;mailbox=INBOX" >6</a>&nbsp;<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=91&amp;mailbox=INBOX" >7</a>&nbsp;<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=106&amp;mailbox=INBOX" >8</a>&nbsp;...&nbsp;<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=1501&amp;mailbox=INBOX" >101</a>&nbsp;<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=1516&amp;mailbox=INBOX" >102</a>&nbsp;<a href="right_main.php?use_mailbox_cache=0&amp;startMessage=1531&amp;mailbox=INBOX" >103</a>&nbsp;|&nbsp;<a href="right_main.php?PG_SHOWALL=1&amp;use_mailbox_cache=0&amp;startMessage=1&amp;mailbox=INBOX" >Show All</a>&nbsp;|&nbsp;<script language="JavaScript" type="text/javascript">
+<!-- 
+function CheckAllINBOX() {
+  for (var i = 0; i < document.FormMsgsINBOX.elements.length; i++) {
+    if(document.FormMsgsINBOX.elements[i].type == 'checkbox'){
+      document.FormMsgsINBOX.elements[i].checked =         !(document.FormMsgsINBOX.elements[i].checked);
+    }
+  }
+}
+//-->
+</script><a href="javascript:void(0)" onClick="CheckAllINBOX();">Toggle All</a>
+BPBPBPB}</td>
+<td align="right">BPBPBPB{Viewing Messages: <b>31</b> to <b>45</b> (1541 total)BPBPBPB}</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td></tr></table>
+</form>
+
+</body></html>
