@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="noindex">
+<title>Insert: current_dept_emp - Adminer</title>
+<link rel="stylesheet" type="text/css" href="adminer.php?file=default.css&amp;version=4.6.4-dev">
+<script src='adminer.php?file=functions.js&amp;version=4.6.4-dev' nonce="ZTQ3NmYwNTAxOWU2MjYwNDJkY2NhNmM5NTVlOTk4Nzk="></script>
+<link rel="shortcut icon" type="image/x-icon" href="adminer.php?file=favicon.ico&amp;version=4.6.4-dev">
+<link rel="apple-touch-icon" href="adminer.php?file=favicon.ico&amp;version=4.6.4-dev">
+
+<body class="ltr nojs">
+<script nonce="ZTQ3NmYwNTAxOWU2MjYwNDJkY2NhNmM5NTVlOTk4Nzk=">
+mixin(document.body, {onkeydown: bodyKeydown, onclick: bodyClick});
+document.body.className = document.body.className.replace(/ nojs/, ' js');
+var offlineMessage = 'You are offline.';
+var thousandsSeparator = ',';
+</script>
+
+<div id="help" class="jush-sql jsonly hidden"></div>
+<script nonce="ZTQ3NmYwNTAxOWU2MjYwNDJkY2NhNmM5NTVlOTk4Nzk=">mixin(qs('#help'), {onmouseover: function () { helpOpen = 1; }, onmouseout: helpMouseout});</script>
+
+<div id="content">
+<p id="breadcrumb"><a href="adminer.php">MySQL</a> &raquo; <a href='adminer.php?username=root' accesskey='1' title='Alt+Shift+1'>Server</a> &raquo; <a href="adminer.php?username=root&amp;db=employees">employees</a> &raquo; <a href='adminer.php?username=root&amp;db=employees&amp;select=current_dept_emp'>current_dept_emp</a> &raquo; Insert
+<h2>Insert: current_dept_emp</h2>
+<div id='ajaxstatus' class='jsonly hidden'></div>
+<form action="" method="post" enctype="multipart/form-data" id="form">
+<table cellspacing='0'><script nonce="ZTQ3NmYwNTAxOWU2MjYwNDJkY2NhNmM5NTVlOTk4Nzk=">qsl('table').onkeydown = editingKeydown;</script>
+<tr><th><span title="BPBPBPB{int(11)BPBPBPB}">BPBPBPB{emp_noBPBPBPB}</span><td class='function'><td><input type='number' value='' data-maxlength='BPBPBPB{11BPBPBPB}' name='fields[BPBPBPB{emp_noBPBPBPB}]'>
+<form>
+  <input type="text" name="origin" value="BPBPBPB{patBPBPBPB}">
+</form>
+<tr><th><span title="BPBPBPB{char(4)BPBPBPB}">BPBPBPB{dept_noBPBPBPB}</span><td class='function'><select name='function[BPBPBPB{dept_noBPBPBPB}]'><option selected><option>BPBPBPB{md5BPBPBPB}<option>BPBPBPB{sha1BPBPBPB}<option>TGTGTGT{passwordTGTGTGT}<option>BPBPBPB{encryptBPBPBPB}<option>BPBPBPB{uuidBPBPBPB}</select><script nonce="ZTQ3NmYwNTAxOWU2MjYwNDJkY2NhNmM5NTVlOTk4Nzk=">mixin(qsl('select, input'), {onmouseover: function (event) { helpMouseover.call(this, event, getTarget(event).value.replace(/^SQL$/, ''), 1) }, onmouseout: helpMouseout});</script><script nonce="ZTQ3NmYwNTAxOWU2MjYwNDJkY2NhNmM5NTVlOTk4Nzk=">qsl('select').onchange = functionChange;</script><td><input value='' data-maxlength='BPBPBPB{4BPBPBPB}' name='fields[BPBPBPB{dept_noBPBPBPB}]'>
+<tr><th><span title="BPBPBPB{dateBPBPBPB}">BPBPBPB{from_dateBPBPBPB}</span><td class='function'><select name='function[BPBPBPB{from_dateBPBPBPB}]'><option selected>BPBPBPB{NULLBPBPBPB}<option><option>BPBPBPB{nowBPBPBPB}</select><script nonce="ZTQ3NmYwNTAxOWU2MjYwNDJkY2NhNmM5NTVlOTk4Nzk=">mixin(qsl('select, input'), {onmouseover: function (event) { helpMouseover.call(this, event, getTarget(event).value.replace(/^SQL$/, ''), 1) }, onmouseout: helpMouseout});</script><script nonce="ZTQ3NmYwNTAxOWU2MjYwNDJkY2NhNmM5NTVlOTk4Nzk=">qsl('select').onchange = functionChange;</script><td><input value='' data-maxlength='BPBPBPB{11BPBPBPB}' name='fields[BPBPBPB{from_dateBPBPBPB}]'><script nonce="ZTQ3NmYwNTAxOWU2MjYwNDJkY2NhNmM5NTVlOTk4Nzk=">mixin(qsl('td'), {onchange: partial(skipOriginal, 1), oninput: function () { this.onchange(); }});</script>
+
+<tr><th><span title="BPBPBPB{dateBPBPBPB}">BPBPBPB{to_dateBPBPBPB}</span><td class='function'><select name='function[BPBPBPB{to_dateBPBPBPB}]'><option selected>BPBPBPB{NULLBPBPBPB}<option><option>BPBPBPB{nowBPBPBPB}</select><script nonce="ZTQ3NmYwNTAxOWU2MjYwNDJkY2NhNmM5NTVlOTk4Nzk=">mixin(qsl('select, input'), {onmouseover: function (event) { helpMouseover.call(this, event, getTarget(event).value.replace(/^SQL$/, ''), 1) }, onmouseout: helpMouseout});</script><script nonce="ZTQ3NmYwNTAxOWU2MjYwNDJkY2NhNmM5NTVlOTk4Nzk=">qsl('select').onchange = functionChange;</script><td><input value='' data-maxlength='BPBPBPB{11BPBPBPB}' name='fields[BPBPBPB{to_dateBPBPBPB}]'><script nonce="ZTQ3NmYwNTAxOWU2MjYwNDJkY2NhNmM5NTVlOTk4Nzk=">mixin(qsl('td'), {onchange: partial(skipOriginal, 1), oninput: function () { this.onchange(); }});</script>
+
+</table>
+<p>
+<input type='submit' value='Save'>
+<input type='submit' name='insert' value='Save and insert next' title='Ctrl+Shift+Enter'>
+<script nonce="ZTQ3NmYwNTAxOWU2MjYwNDJkY2NhNmM5NTVlOTk4Nzk=">focus(qsa('td', qs('#form'))[1].firstChild);</script>
+<input type="hidden" name="referer" value="">
+<input type="hidden" name="save" value="1">
+<input type="hidden" name="token" value="628256:151015">
+</form>
+</div>
+
+<form action="" method="post">
+<p class="logout">
+<input type="submit" name="logout" value="Logout" id="logout">
+<input type="hidden" name="token" value="628256:151015">
+</p>
+</form>
+<div id="menu">
+<h1>
+<a href='https://www.adminer.org/' target="_blank" rel="noreferrer noopener" id='h1'>Adminer</a> <span class="version">4.6.4-dev</span>
+<a href="https://www.adminer.org/#download" target="_blank" rel="noreferrer noopener" id="version"></a>
+</h1>
+<script src='adminer.php?file=jush.js&amp;version=4.6.4-dev' nonce="ZTQ3NmYwNTAxOWU2MjYwNDJkY2NhNmM5NTVlOTk4Nzk="></script>
+<script nonce="ZTQ3NmYwNTAxOWU2MjYwNDJkY2NhNmM5NTVlOTk4Nzk=">
+var jushLinks = { sql: [ 'adminer.php?username=root&db=employees&table=$&', /\b(current_dept_emp|departments|dept_emp|dept_emp_latest_date|dept_manager|employees|salaries|titles)\b/g ] };
+jushLinks.bac = jushLinks.sql;
+jushLinks.bra = jushLinks.sql;
+jushLinks.sqlite_quo = jushLinks.sql;
+jushLinks.mssql_bra = jushLinks.sql;
+bodyLoad('5.7');
+</script>
+<form action="">
+<p id="dbs">
+<input type="hidden" name="username" value="root"><span title='database'>DB</span>: <select name='db'><option value=""><option>addressbook<option selected>employees<option>information_schema<option>mysql<option>performance_schema<option>sys</select><script nonce="ZTQ3NmYwNTAxOWU2MjYwNDJkY2NhNmM5NTVlOTk4Nzk=">mixin(qsl('select'), {onmousedown: dbMouseDown, onchange: dbChange});</script>
+<input type='submit' value='Use' class='hidden'>
+</p></form>
+<p class='links'><a href='adminer.php?username=root&amp;db=employees&amp;sql='>SQL command</a>
+<a href='adminer.php?username=root&amp;db=employees&amp;import='>Import</a>
+<a href='adminer.php?username=root&amp;db=employees&amp;dump=' id='dump'>Export</a>
+<a href="adminer.php?username=root&amp;db=employees&amp;create=">Create table</a>
+<ul id='tables'><script nonce="ZTQ3NmYwNTAxOWU2MjYwNDJkY2NhNmM5NTVlOTk4Nzk=">mixin(qs('#tables'), {onmouseover: menuOver, onmouseout: menuOut});</script>
+<li><a href="adminer.php?username=root&amp;db=employees&amp;select=current_dept_emp" class='active select'>select</a> <a href="adminer.php?username=root&amp;db=employees&amp;table=current_dept_emp" class='view' title='Show structure'>current_dept_emp</a>
+<li><a href="adminer.php?username=root&amp;db=employees&amp;select=departments" class='select'>select</a> <a href="adminer.php?username=root&amp;db=employees&amp;table=departments" class='structure' title='Show structure'>departments</a>
+<li><a href="adminer.php?username=root&amp;db=employees&amp;select=dept_emp" class='select'>select</a> <a href="adminer.php?username=root&amp;db=employees&amp;table=dept_emp" class='structure' title='Show structure'>dept_emp</a>
+<li><a href="adminer.php?username=root&amp;db=employees&amp;select=dept_emp_latest_date" class='select'>select</a> <a href="adminer.php?username=root&amp;db=employees&amp;table=dept_emp_latest_date" class='view' title='Show structure'>dept_emp_latest_date</a>
+<li><a href="adminer.php?username=root&amp;db=employees&amp;select=dept_manager" class='select'>select</a> <a href="adminer.php?username=root&amp;db=employees&amp;table=dept_manager" class='structure' title='Show structure'>dept_manager</a>
+<li><a href="adminer.php?username=root&amp;db=employees&amp;select=employees" class='select'>select</a> <a href="adminer.php?username=root&amp;db=employees&amp;table=employees" class='structure' title='Show structure'>employees</a>
+<li><a href="adminer.php?username=root&amp;db=employees&amp;select=salaries" class='select'>select</a> <a href="adminer.php?username=root&amp;db=employees&amp;table=salaries" class='structure' title='Show structure'>salaries</a>
+<li><a href="adminer.php?username=root&amp;db=employees&amp;select=titles" class='select'>select</a> <a href="adminer.php?username=root&amp;db=employees&amp;table=titles" class='structure' title='Show structure'>titles</a>
+</ul>
+</div>
+<script nonce="ZTQ3NmYwNTAxOWU2MjYwNDJkY2NhNmM5NTVlOTk4Nzk=">setupSubmitHighlight(document);</script>

@@ -1,0 +1,1516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>NOCC - Webmail</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="themes/standard/style.css" rel="stylesheet" type="text/css" />
+        <link href="themes/standard/print.css" rel="stylesheet" media="print" type="text/css" />
+        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <script src="js/nocc.js" type="text/javascript"></script>
+        <link rel="alternate" type="application/rss+xml" title="RSS - NOCC" href="rss.php?sname=NOCC_32bd9aea8b83cea635cf2624eee6caf5&amp;nocc_lang=ZW4=&amp;nocc_smtp_server=c210cC5nbWFpbC5jb20=&amp;nocc_smtp_port=NDY1&amp;nocc_theme=c3RhbmRhcmQ=&amp;nocc_domain=Z21haWwuY29t&amp;imap_namespace=SU5CT1gu&amp;nocc_servr=aW1hcC5nbWFpbC5jb206OTkzL3NzbA==&amp;nocc_folder=SU5CT1g=&amp;smtp_auth=bG9naW4=&amp;nocc_user=YnJhbmRvbnBhdWxzZW44&amp;nocc_passwd=HB4cFxwYHBkcGhwbHBwcHRke&amp;nocc_login=YnJhbmRvbnBhdWxzZW44&amp;ucb_pop_server=&amp;quota_enable=&amp;quota_type=U1RPUkFHRQ==" />
+    </head>
+    <body dir="ltr">
+        <div id="header">
+            <h1>NOCC</h1>
+<ul>
+<li><a href="index.php?sname=NOCC_3d22fe8bb510cda26a993572f442bff2" target="_blank">Next session</a></li>  <li><a href="action.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5&action=setprefs">Preferences</a></li>
+  <li><span title="This session expires automatically at 2019-05-11 01:33 AM"><a href="logout.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5">Logout</a></span></li><li>NOCC v1.9.7</li>
+</ul>
+        </div>
+        <div id="main">
+<!-- end of $Id: header.php 2682 2016-09-14 14:50:40Z oheil $ -->
+<!-- start of $Id: menu_mail.php 2713 2017-09-06 12:34:03Z oheil $ -->
+<div class="mainmenu">
+  <ul>
+
+
+
+		<li><a href="action.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5">Back</a></li>
+	    <li>
+
+	
+    <li>
+	<a href="action.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5&folder=INBOX">Inbox<span class="inbox_changed" style="display:none;color:darkred;">!</span></a>
+    </li>
+    <li class="selected">
+      <span>Message</span>
+    </li>
+        <li>
+      <a href="action.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5&action=managefolders" title="Manage IMAP Folders">Folders</a>
+    </li>
+          </ul>
+</div>
+<!-- end of $Id: menu_mail.php 2713 2017-09-06 12:34:03Z oheil $ -->
+<!-- start of $Id: submenu_mail.php 2610 2014-04-28 08:48:56Z oheil $ -->
+<div class="submenu">
+  <ul>
+    <li>
+      <a href="action.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5&action=write">Write</a>
+    </li>
+    <li>
+      <a href="action.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5&action=reply&amp;mail=BPBPBPB{868BPBPBPB}&amp;display_images=0">Reply</a>
+    </li>
+    <li>
+      <a href="action.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5&action=reply_all&amp;mail=BPBPBPB{868BPBPBPB}&amp;display_images=0">Reply all</a>
+    </li>
+    <li>
+      <a href="action.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5&action=forward&amp;mail=BPBPBPB{868BPBPBPB}">Forward</a>
+    </li>
+    <li>
+      <a href="down_mail.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5&mail=BPBPBPB{868BPBPBPB}">Download</a>
+    </li>
+    <li>
+      <a href="delete.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5&delete_mode=1&amp;mail=BPBPBPB{868BPBPBPB}&amp;only_one=1" onclick="if (confirm('Delete selected messages?')) return true; else return false;">Delete</a>
+    </li>
+  </ul>
+</div>
+<!-- end of $Id: submenu_mail.php 2610 2014-04-28 08:48:56Z oheil $ -->
+<!-- start of $Id: html_mail.php 2629 2014-11-19 15:23:53Z oheil $ -->
+<div class="mailNav">
+   <table>
+<tr><td class="mailSwitchHeaders dontPrint"><a href="action.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5&action=aff_mail&amp;mail=BPBPBPB{868BPBPBPB}&amp;verbose=1&amp;display_images=0">View header</a></td><td class="right dontPrint"><a href="action.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5&action=aff_mail&amp;mail=BPBPBPB{869BPBPBPB}&amp;verbose=0" title="Previous message" rel="prev">&laquo; Previous</a>&nbsp;<a href="action.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5&action=aff_mail&amp;mail=BPBPBPB{867BPBPBPB}&amp;verbose=0" title="Next message" rel="next">Next &raquo;</a></td></tr><tr><th class="mailHeaderLabel">From:</th><td class="mailHeaderData">BPBPBPB{&quot;Yelp – San Francisco&quot; &lt;no-reply@yelp.com&gt;BPBPBPB}</td></tr><tr><th class="mailHeaderLabel">To:</th><td class="mailHeaderData">TGTGTGT{brandonpaulsen8@gmail.comTGTGTGT}</td></tr><tr><th class="mailHeaderLabel">Subject:</th><td class="mailHeaderData">BPBPBPB{Put These Top Oyster Spots On Your To-Do List!BPBPBPB}</td></tr><tr><th class="mailHeaderLabel">Date:</th><td class="mailHeaderData">BPBPBPB{2018-08-22 03:26 PMBPBPBPB}</td></tr><tr><th class="mailHeaderLabel">Character encoding:</th><td class="mailHeaderData"><form id="encoding" action="action.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5" method="post"><div><input type="hidden" name="action" value="aff_mail"/><input type="hidden" name="mail" value="868"/><input type="hidden" name="verbose" value="0"/><select class="button" name="user_charset"><option value="">----------</option><optgroup label="Arabic"><option value="BPBPBPB{ISO-8859-6BPBPBPB}">Arabic (ISO-8859-6)</option><option value="BPBPBPB{MacArabicBPBPBPB}">Arabic (MacArabic)</option></optgroup><optgroup label="Armenian"><option value="BPBPBPB{ARMSCIIBPBPBPB}">Armenian (ARMSCII)</option></optgroup><optgroup label="Baltic"><option value="BPBPBPB{ISO-8859-13BPBPBPB}">Baltic (ISO-8859-13)</option></optgroup><optgroup label="Celtic"><option value="BPBPBPB{ISO-8859-14BPBPBPB}">Celtic (ISO-8859-14)</option></optgroup><optgroup label="Central European"><option value="BPBPBPB{ISO-8859-2BPBPBPB}">Central European (ISO-8859-2)</option></optgroup><optgroup label="Chinese"><option value="BPBPBPB{GB18030BPBPBPB}">Chinese, simplified (GB18030)</option><option value="BPBPBPB{GB2312BPBPBPB}">Chinese, simplified (GB2312)</option><option value="BPBPBPB{GBKBPBPBPB}">Chinese, simplified (GBK)</option><option value="BPBPBPB{HZBPBPBPB}">Chinese, simplified (HZ)</option><option value="BPBPBPB{ISO-2022-CNBPBPBPB}">Chinese, simplified (ISO-2022-CN)</option><option value="BPBPBPB{ISO-2022-CN-EXTBPBPBPB}">Chinese, simplified (ISO-2022-CN-EXT)</option><option value="BPBPBPB{EUC-CNBPBPBPB}">Chinese, simplified (EUC-CN)</option><option value="BPBPBPB{BIG5BPBPBPB}">Chinese, traditional (BIG5)</option><option value="BPBPBPB{BIG5-HKSCSBPBPBPB}">Chinese, traditional (BIG5-HKSCS)</option><option value="BPBPBPB{EUC-TWBPBPBPB}">Chinese, traditional (EUC-TW)</option></optgroup><optgroup label="Croatian"><option value="BPBPBPB{MacCroatianBPBPBPB}">Croatian (MacCroatian)</option></optgroup><optgroup label="Cyrillic"><option value="BPBPBPB{ISO-8859-5BPBPBPB}">Cyrillic (ISO-8859-5)</option><option value="BPBPBPB{ISO-IR-111BPBPBPB}">Cyrillic (ISO-IR-111)</option><option value="BPBPBPB{MacCyrillicBPBPBPB}">Cyrillic (MacCyrillic)</option></optgroup><optgroup label="Greek"><option value="BPBPBPB{ISO-8859-7BPBPBPB}">Greek (ISO-8859-7)</option><option value="BPBPBPB{MacGreekBPBPBPB}">Greek (MacGreek)</option></optgroup><optgroup label="Hebrew"><option value="BPBPBPB{ISO-8859-8-IBPBPBPB}">Hebrew (ISO-8859-8-I)</option><option value="BPBPBPB{MacHebrewBPBPBPB}">Hebrew (MacHebrew)</option><option value="BPBPBPB{ISO-8859-8BPBPBPB}">Hebrew, visual (ISO-8859-8)</option></optgroup><optgroup label="Icelandic"><option value="BPBPBPB{MacIcelandicBPBPBPB}">Icelandic (MacIcelandic)</option></optgroup><optgroup label="International"><option value="BPBPBPB{UTF-8BPBPBPB}" selected="selected">International (UTF-8)</option></optgroup><optgroup label="Japanese"><option value="BPBPBPB{ISO-2022-JPBPBPBPB}">Japanese (ISO-2022-JP)</option><option value="BPBPBPB{ISO-2022-JP-1BPBPBPB}">Japanese (ISO-2022-JP-1)</option><option value="BPBPBPB{ISO-2022-JP-2BPBPBPB}">Japanese (ISO-2022-JP-2)</option><option value="BPBPBPB{ISO-2022-JP-3BPBPBPB}">Japanese (ISO-2022-JP-3)</option><option value="BPBPBPB{Shift_JISBPBPBPB}">Japanese (Shift_JIS)</option><option value="BPBPBPB{EUC-JPBPBPBPB}">Japanese (EUC-JP)</option></optgroup><optgroup label="Korean"><option value="BPBPBPB{ISO-2022-KRBPBPBPB}">Korean (ISO-2022-KR)</option><option value="BPBPBPB{JOHABBPBPBPB}">Korean (JOHAB)</option><option value="BPBPBPB{UHCBPBPBPB}">Korean (UHC)</option><option value="BPBPBPB{EUC-KRBPBPBPB}">Korean (EUC-KR)</option></optgroup><optgroup label="Nordic"><option value="BPBPBPB{ISO-8859-10BPBPBPB}">Nordic (ISO-8859-10)</option></optgroup><optgroup label="North European"><option value="BPBPBPB{ISO-8859-4BPBPBPB}">North European (ISO-8859-4)</option></optgroup><optgroup label="Romanian"><option value="BPBPBPB{MacRomanianBPBPBPB}">Romanian (MacRomanian)</option></optgroup><optgroup label="Russian"><option value="BPBPBPB{KOI8-RBPBPBPB}">Russian (KOI8-R)</option></optgroup><optgroup label="South European"><option value="BPBPBPB{ISO-8859-3BPBPBPB}">South European (ISO-8859-3)</option></optgroup><optgroup label="South-Eastern European"><option value="BPBPBPB{ISO-8859-16BPBPBPB}">South-Eastern European (ISO-8859-16)</option></optgroup><optgroup label="Thai"><option value="BPBPBPB{ISO-8859-11BPBPBPB}">Thai (ISO-8859-11)</option><option value="BPBPBPB{TIS-620BPBPBPB}">Thai (TIS-620)</option></optgroup><optgroup label="Turkish"><option value="BPBPBPB{ISO-8859-9BPBPBPB}">Turkish (ISO-8859-9)</option><option value="BPBPBPB{MacTurkishBPBPBPB}">Turkish (MacTurkish)</option></optgroup><optgroup label="Ukrainian"><option value="BPBPBPB{KOI8-UBPBPBPB}">Ukrainian (KOI8-U)</option><option value="BPBPBPB{MacUkrainianBPBPBPB}">Ukrainian (MacUkrainian)</option></optgroup><optgroup label="Vietnamese"><option value="BPBPBPB{TCVNBPBPBPB}">Vietnamese (TCVN)</option><option value="BPBPBPB{VISCIIBPBPBPB}">Vietnamese (VISCII)</option></optgroup><optgroup label="Western European"><option value="BPBPBPB{ISO-8859-1BPBPBPB}">Western European (ISO-8859-1)</option><option value="BPBPBPB{ISO-8859-15BPBPBPB}">Western European (ISO-8859-15)</option><option value="BPBPBPB{MacRomanBPBPBPB}">Western European (MacRoman)</option></optgroup></select>&nbsp;&nbsp;<input name="submit" class="button" type="submit" value="Submit" /></div></form></td></tr>   </table>
+</div>
+<div class="nopic">For your security, remote pictures are not displayed.<br/><a href="action.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5&action=aff_mail&mail=BPBPBPB{868BPBPBPB}&verbose=0&display_images=1">Display pictures</a></div><div class="mailData">
+<div class="mail">BPBPBPB{<img src="none" width="0" height="0" alt="image" style="float: right;" /><!--[if (gte mso 9)|(IE)]&gt;
+            &lt;table align="center" cellpadding="0" cellspacing="0" width="620" bgcolor="#f5f5f5" style="background-color: #f5f5f5"&gt;
+                &lt;tr&gt;
+                    &lt;td style="border-collapse: collapse;"&gt;
+            &lt;!-[endif]- -->
+                <table border="0" cellpadding="0" cellspacing="0" style="background-color: #f5f5f5;" width="100%">
+                    <tr>
+                        <td align="center" style="border-collapse: collapse;">
+                            <div class="body" style="max-width: 620px;                                  min-width: 320px;                                  margin: 0 auto;">
+                                <table cellpadding="0" cellspacing="0" width="100%" style="width: 100%;                                      background-color: #f5f5f5; margin: auto; background-color: #f5f5f5;">
+                                    <tr>
+                                        <td style="border-collapse: collapse;">
+                                                        <table style="max-width: 620px;          min-width: 320px;          margin: 0 auto; margin: auto;">
+        <tr>
+            <td style="text-align: center;                  padding: 15px 0 15px 0;">
+                <img src="none" alt="Yelp burst" height="80" width="160" />
+            </td>
+        </tr>
+    </table>
+
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                            <td style="border-radius: 3px 3px 0 0;          background-color: #f5f5f5;          border-collapse: collapse; width: 100%; background-color: #f5f5f5;">
+        <div style="overflow: hidden;              border-radius: 3px 3px 0 0;              border: 1px solid #f5f5f5;              background-color: #f5f5f5;">
+            
+                    <div style="display: none !important;          visibility: hidden;          mso-hide: all;          font-size: 1px;          color: #ffffff;          line-height: 1px;          max-height: 0px;          max-width: 0px;          opacity: 0;          overflow: hidden;">
+        Order delivery on Yelp today! Let us bring the best local treats to your table.
+    </div>
+
+
+
+
+        
+
+    <table width="100%" style="border-spacing: 0; border-radius: 3px; border-collapse: separate !important; border: 1px solid #e6e6e6; -webkit-border-radius: 3px; background-color: #ffffff;">
+        <tr><td class="" style="border-collapse: collapse;              padding: 0px 0px 0px 0px;              font-family: Helvetica Neue, Arial, sans-serif;">
+            <a href="https://www.yelp.com/biz/the-dorian-san-francisco?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">
+        <img src="none" title="Put These Top Oyster Spots On Your To-Do List!" alt="Oyster sampler" width="100%" style="display: block; border-radius: 3px 3px 0px 0px;" />
+    </a>
+
+
+        
+
+    <table width="100%" style="border-spacing: 0; font-size: 12px; text-align: right;">
+        <tr><td class="text" style="border-collapse: collapse;              padding: 6px 40px 6px 40px;              font-family: Helvetica Neue, Arial, sans-serif;">
+        
+
+
+
+
+    <span>Photo by <a href="https://www.yelp.com/biz_photos/the-dorian-san-francisco?select=V-FzQ2ezVUTcSXjlDWSU5g&amp;ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank" style="color: #0073bb; color: #0073bb; text-decoration: none;">The Dorian</a></span> &#8211; <a href="https://www.yelp.com/biz/the-dorian-san-francisco?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank" style="color: #999999; text-decoration: none;">Oyster sampler</a>
+</td>
+        </tr>
+    </table>
+
+
+            <table border="0" cellpadding="0" cellspacing="0"><tr><td style="height: 12px;"></td></tr></table>
+
+
+        
+
+        
+
+    <table width="100%" style="border-spacing: 0; font-size: 30px; font-weight: bold; margin: 0; line-height: 36px; text-align: center;">
+        <tr><td class="text" style="border-collapse: collapse;              padding: 0px 40px 0px 40px;              font-family: Helvetica Neue, Arial, sans-serif;">
+            <a href="https://www.yelp.com/local_yelp/A2GCaaoEAtfg6Ol-8omSaw?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank" style="text-decoration: none; color: #333333;">
+                Put These Top Oyster Spots On Your To-Do List!
+            </a>
+        </td></tr>
+    </table>
+
+
+        
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="" style="border-collapse: collapse;              padding: 6px 0px 6px 0px;              font-family: Helvetica Neue, Arial, sans-serif;">
+
+        <p style="font-size: 16px; margin: 0; line-height: 24px; text-align: center;">
+                The Local Yelp - San Francisco.
+                <a href="https://www.yelp.com/profile_email_notifications/show_subscriptions?subscription_type=weekly&amp;ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank" style="color: #0073bb; text-decoration: none;">
+                    Change location
+                </a>
+        </p>
+        </td></tr>
+    </table>
+
+
+            
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="text" style="border-collapse: collapse;              padding: 6px 40px 6px 40px;              font-family: Helvetica Neue, Arial, sans-serif;">
+            
+    <p style="font-size: 16px; margin: 0; line-height: 24px; text-align: left;">
+            Shucks, we love oysters&#8212;they&#8217;re the perfect blend of low-key appetizer and high-class delicacy. Whether you prefer raw and ready, a hint of vinaigrette, or barbecued perfection, this week we&#8217;re sharing some of San Francisco&#8217;s top spots to slurp. Check out this list to get your appetite going.
+            <br />
+    </p>
+
+        </td></tr>
+    </table>
+
+
+
+        
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="text" style="border-collapse: collapse;              padding: 6px 40px 6px 40px;              font-family: Helvetica Neue, Arial, sans-serif;">
+            
+
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="" style="border-collapse: collapse;              padding: 12px 0px 12px 0px;              font-family: Helvetica Neue, Arial, sans-serif;">
+        <div style="line_height: 24px; background-color: #e6e6e6; height: 1px;"></div>
+        </td></tr>
+    </table>
+
+                <table border="0" cellpadding="0" cellspacing="0"><tr><td style="height: 12px;"></td></tr></table>
+
+                <div class="mobile-only" style="max-height: 0px; font-size: 0; overflow: hidden; display: none;">
+        <table class="mobile-only" width="100%" style="max-height: 0px; font-size: 0; overflow: hidden; display: none;">
+            <tr><td align="left" style="border-collapse: collapse;                  font-family: Helvetica Neue, Arial, sans-serif;">
+                    <a href="https://www.yelp.com/biz/mission-street-oyster-bar-and-seafood-restaurant-san-francisco?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">
+                        <img src="none" alt="" width="100%" style="border-radius: 3px; -webkit-border-radius: 3px;" />
+                    </a>
+            </td></tr>
+        </table>
+    </div>
+
+
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; text-align: left;" width="100%">
+        <tr>
+            <td style="text-align: left;                  vertical-align: top;                  font-size: 0;                  font-family: empty;                  border-collapse: collapse;">
+
+
+
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 16px; font-family: Helvetica Neue, Arial, sans-serif;; vertical-align: top; display: inline-block;">
+        <tr>
+            <td style="border-collapse: collapse;                  padding: 0px 12px 6px 0px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="110">
+                <tr>
+                    <td class="hide-mobile" valign="top" style="">
+                        <a href="https://www.yelp.com/biz/mission-street-oyster-bar-and-seafood-restaurant-san-francisco?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">
+                            <img src="none" alt="" width="110" style="border-radius: 3px; -webkit-border-radius: 3px;" />
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+    </table>
+
+
+
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 16px; font-family: Helvetica Neue, Arial, sans-serif;; vertical-align: top; display: inline-block;">
+        <tr>
+            <td style="border-collapse: collapse;                  padding: 0px 0px 6px 0px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="414">
+                <tr>
+                    <td class="content" valign="top" style="">
+        <table border="0" cellpadding="0" cellspacing="0" style="text-align: left;              font-family: Helvetica Neue, Arial, sans-serif;;              color: #333333;">
+            <tr><td valign="top" style="font-family: Helvetica Neue, Arial, sans-serif;;">
+                    <a style="text-decoration: none" href="https://www.yelp.com/biz/mission-street-oyster-bar-and-seafood-restaurant-san-francisco?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">
+        <strong style="font-size: 21px;              line-height: 21px;              text-decoration: none;              color: #0073bb;">
+            Mission Street Oyster Bar &amp; Seafood Restaurant
+        </strong>
+    </a>
+
+            </td></tr>
+            <tr><td valign="top" style="font-family: Helvetica Neue, Arial, sans-serif;;                  white-space: nowrap;">
+                
+
+            <table border="0" cellpadding="0" cellspacing="0"><tr><td style="height: 9.0;"></td></tr></table>
+
+        <table border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                            <td>
+        <img alt="4 star rating" class="rating-image" height="24px" src="none" style="vertical-align: middle; margin-top: -1px; outline: none; border: 0px;" width="132px" />
+    </td>
+
+
+                    <td style="width: 10px;"></td>
+                    <td>
+                        <span style="color: #333333; font-size: 14px; font-family: Helvetica Neue, Arial, sans-serif;;" class="review-count">
+                            489 reviews
+                        </span>
+                    </td>
+            </tr>
+        </table>
+
+            </td></tr>
+            <tr><td valign="top" style="font-family: Helvetica Neue, Arial, sans-serif;;">
+                    <table border="0" cellpadding="0" cellspacing="0">
+            <tr><td style="color: #999999;                      padding: 9.0px 0px 0px 0px;                      font-family: Helvetica Neue, Arial, sans-serif;;                      font-size: 14px;">
+                Seafood, Fish &amp; Chips
+            </td></tr>
+
+        <tr><td style="color: #333333; padding: 6px 0px; font-size: 14px; font-family: Helvetica Neue, Arial, sans-serif;;">
+            Mission, 2282 Mission St, San Francisco, CA
+        </td></tr>
+    </table>
+
+            </td></tr>
+        </table>
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+    </table>
+            </td>
+        </tr>
+    </table>
+
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="" style="border-collapse: collapse;              padding: 6px 0px 6px 0px;              font-family: Helvetica Neue, Arial, sans-serif;">
+            
+    <table style="">
+        <tr>
+            <td style="padding-top: 6px; vertical-align: top;">
+                    <a href="https://www.yelp.com/biz/mission-street-oyster-bar-and-seafood-restaurant-san-francisco?hrid=H37_Stv-S8bvBgn6lIF7DA&amp;ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">
+                    <img src="none" alt="Tara K." style="border-radius: 3px; width: 40px; -webkit-border-radius: 3px; margin-right: 10px;" />
+                    </a>
+            </td>
+            <td style="vertical-align: top; text-align: left;">
+        <span style="text-align: left;              font-family: Helvetica Neue, Arial, sans-serif;;              font-size: 16px;              line-height: 24px;">
+            <a href="https://www.yelp.com/biz/mission-street-oyster-bar-and-seafood-restaurant-san-francisco?hrid=H37_Stv-S8bvBgn6lIF7DA&amp;ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank" style="color: #0073bb; text-decoration: none;">Tara K.</a> wrote:
+            &#8220;The oysters are amazing, especially with $2 deal. The baked oysters are my fave along with the crab appetizer. Service was amazing.&#8221;
+        </span>
+            </td>
+        </tr>
+    </table>
+
+        </td></tr>
+    </table>
+
+
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="" style="border-collapse: collapse;              padding: 6px 0px 6px 0px;              font-family: Helvetica Neue, Arial, sans-serif;">
+                <table border="0" cellpadding="0" cellspacing="0" class="hide-mobile" style="text-align: left;">
+        <tr>
+                <td>
+                    
+
+        
+
+
+        
+    <!--[if mso]&gt;
+    &lt;span style="
+        width: initial;
+        display: inline-block;
+        margin-bottom: 6px;
+        text-align: center;
+        background-color: #f5f5f5;
+        border: 1px solid #bfbfbf;"&gt;
+
+        &lt;a  href="https://www.yelp.com/reservations/Wpu06GbaMorLXfbN5s0spg" target="_blank" style="
+            display: inline-block;
+            text-decoration: none;
+            font-family: Helvetica Neue, Arial, sans-serif;;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333333;
+            width: initial;
+            white-space: nowrap;
+            border-color: #f5f5f5;
+            border-width: 12px 28px;
+            border-style: solid;"&gt;
+            Make Reservation
+        &lt;/a&gt;
+    &lt;/span&gt;&amp;nbsp; 
+    &lt;div style="display:none;"&gt;
+    &lt;!-[endif]- -->
+
+        
+    <a href="https://www.yelp.com/reservations/Wpu06GbaMorLXfbN5s0spg?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank" style="border-radius: 3px; font-size: 16px; color: #333333; padding: 12px 28px; background: #f5f5f5; white-space: nowrap; font-family: Helvetica Neue, Arial, sans-serif;; border: 1px solid #bfbfbf; text-align: center; background-image: linear-gradient(white, #eee); -webkit-border-radius: 3px; text-decoration: none; width: initial; font-weight: bold; display: inline-block;">
+            <img height="18px" style="padding-right: 6px; vertical-align: text-bottom;" src="none" alt="image" />
+        Make Reservation
+    </a>
+
+    <!--[if mso]&gt;
+    &lt;/div&gt;
+    &lt;!-[endif]- -->
+
+
+                </td>
+        </tr>
+    </table>
+
+    <div class="mobile-only" style="max-height: 0px; font-size: 0; overflow: hidden; display: none;">
+        <table border="0" cellpadding="0" cellspacing="0" class="mobile-only" style="max-height: 0px; font-size: 0; overflow: hidden; display: none;              width: 100%;              text-align: center">
+
+                <tr><td>
+                    
+
+        
+
+        
+
+        
+    <!--[if mso]&gt;
+    &lt;span style="
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 6px;
+        text-align: center;
+        background-color: #f5f5f5;
+        border: 1px solid #bfbfbf;"&gt;
+
+        &lt;a  href="https://www.yelp.com/reservations/Wpu06GbaMorLXfbN5s0spg" target="_blank" style="
+            display: inline-block;
+            text-decoration: none;
+            font-family: Helvetica Neue, Arial, sans-serif;;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333333;
+            width: 100%;
+            white-space: nowrap;
+            border-color: #f5f5f5;
+            border-width: 12px 0;
+            border-style: solid;"&gt;
+            Make Reservation
+        &lt;/a&gt;
+    &lt;/span&gt;&amp;nbsp; 
+    &lt;div style="display:none;"&gt;
+    &lt;!-[endif]- -->
+
+        
+    <a href="https://www.yelp.com/reservations/Wpu06GbaMorLXfbN5s0spg?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank" style="border-radius: 3px; font-size: 16px; color: #333333; padding: 12px 0; background: #f5f5f5; white-space: nowrap; font-family: Helvetica Neue, Arial, sans-serif;; border: 1px solid #bfbfbf; text-align: center; background-image: linear-gradient(white, #eee); -webkit-border-radius: 3px; text-decoration: none; width: 100%; font-weight: bold; display: inline-block;">
+            <img height="18px" style="padding-right: 6px; vertical-align: text-bottom;" src="none" alt="image" />
+        Make Reservation
+    </a>
+
+    <!--[if mso]&gt;
+    &lt;/div&gt;
+    &lt;!-[endif]- -->
+
+
+                </td></tr>
+        </table>
+    </div>
+
+        </td></tr>
+    </table>
+
+        </td></tr>
+    </table>
+
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="text" style="border-collapse: collapse;              padding: 6px 40px 6px 40px;              font-family: Helvetica Neue, Arial, sans-serif;">
+            
+
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="" style="border-collapse: collapse;              padding: 12px 0px 12px 0px;              font-family: Helvetica Neue, Arial, sans-serif;">
+        <div style="line_height: 24px; background-color: #e6e6e6; height: 1px;"></div>
+        </td></tr>
+    </table>
+
+                <table border="0" cellpadding="0" cellspacing="0"><tr><td style="height: 12px;"></td></tr></table>
+
+                <div class="mobile-only" style="max-height: 0px; font-size: 0; overflow: hidden; display: none;">
+        <table class="mobile-only" width="100%" style="max-height: 0px; font-size: 0; overflow: hidden; display: none;">
+            <tr><td align="left" style="border-collapse: collapse;                  font-family: Helvetica Neue, Arial, sans-serif;">
+                    <a href="https://www.yelp.com/biz/leos-oyster-bar-san-francisco-2?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">
+                        <img src="none" alt="" width="100%" style="border-radius: 3px; -webkit-border-radius: 3px;" />
+                    </a>
+            </td></tr>
+        </table>
+    </div>
+
+
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; text-align: left;" width="100%">
+        <tr>
+            <td style="text-align: left;                  vertical-align: top;                  font-size: 0;                  font-family: empty;                  border-collapse: collapse;">
+
+
+
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 16px; font-family: Helvetica Neue, Arial, sans-serif;; vertical-align: top; display: inline-block;">
+        <tr>
+            <td style="border-collapse: collapse;                  padding: 0px 12px 6px 0px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="110">
+                <tr>
+                    <td class="hide-mobile" valign="top" style="">
+                        <a href="https://www.yelp.com/biz/leos-oyster-bar-san-francisco-2?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">
+                            <img src="none" alt="" width="110" style="border-radius: 3px; -webkit-border-radius: 3px;" />
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+    </table>
+
+
+
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 16px; font-family: Helvetica Neue, Arial, sans-serif;; vertical-align: top; display: inline-block;">
+        <tr>
+            <td style="border-collapse: collapse;                  padding: 0px 0px 6px 0px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="414">
+                <tr>
+                    <td class="content" valign="top" style="">
+        <table border="0" cellpadding="0" cellspacing="0" style="text-align: left;              font-family: Helvetica Neue, Arial, sans-serif;;              color: #333333;">
+            <tr><td valign="top" style="font-family: Helvetica Neue, Arial, sans-serif;;">
+                    <a style="text-decoration: none" href="https://www.yelp.com/biz/leos-oyster-bar-san-francisco-2?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">
+        <strong style="font-size: 21px;              line-height: 21px;              text-decoration: none;              color: #0073bb;">
+            Leo&#8217;s Oyster Bar
+        </strong>
+    </a>
+
+            </td></tr>
+            <tr><td valign="top" style="font-family: Helvetica Neue, Arial, sans-serif;;                  white-space: nowrap;">
+                
+
+            <table border="0" cellpadding="0" cellspacing="0"><tr><td style="height: 9.0;"></td></tr></table>
+
+        <table border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                            <td>
+        <img alt="4 star rating" class="rating-image" height="24px" src="none" style="vertical-align: middle; margin-top: -1px; outline: none; border: 0px;" width="132px" />
+    </td>
+
+
+                    <td style="width: 10px;"></td>
+                    <td>
+                        <span style="color: #333333; font-size: 14px; font-family: Helvetica Neue, Arial, sans-serif;;" class="review-count">
+                            274 reviews
+                        </span>
+                    </td>
+            </tr>
+        </table>
+
+            </td></tr>
+            <tr><td valign="top" style="font-family: Helvetica Neue, Arial, sans-serif;;">
+                    <table border="0" cellpadding="0" cellspacing="0">
+            <tr><td style="color: #999999;                      padding: 9.0px 0px 0px 0px;                      font-family: Helvetica Neue, Arial, sans-serif;;                      font-size: 14px;">
+                Bars, Seafood
+            </td></tr>
+
+        <tr><td style="color: #333333; padding: 6px 0px; font-size: 14px; font-family: Helvetica Neue, Arial, sans-serif;;">
+            Financial District, 568 Sacramento St, San Francisco, CA
+        </td></tr>
+    </table>
+
+            </td></tr>
+        </table>
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+    </table>
+            </td>
+        </tr>
+    </table>
+
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="" style="border-collapse: collapse;              padding: 6px 0px 6px 0px;              font-family: Helvetica Neue, Arial, sans-serif;">
+            
+    <table style="">
+        <tr>
+            <td style="padding-top: 6px; vertical-align: top;">
+                    <a href="https://www.yelp.com/biz/leos-oyster-bar-san-francisco-2?hrid=KbxlKvJiEsRuvgjblcClIQ&amp;ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">
+                    <img src="none" alt="Paulina F." style="border-radius: 3px; width: 40px; -webkit-border-radius: 3px; margin-right: 10px;" />
+                    </a>
+            </td>
+            <td style="vertical-align: top; text-align: left;">
+        <span style="text-align: left;              font-family: Helvetica Neue, Arial, sans-serif;;              font-size: 16px;              line-height: 24px;">
+            <a href="https://www.yelp.com/biz/leos-oyster-bar-san-francisco-2?hrid=KbxlKvJiEsRuvgjblcClIQ&amp;ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank" style="color: #0073bb; text-decoration: none;">Paulina F.</a> wrote:
+            &#8220;This is an oyster bar, so, naturally, we opted for alcohol and oysters. Cool concept drinks, and some of the freshest oysters I've had locally.&#8221;
+        </span>
+            </td>
+        </tr>
+    </table>
+
+        </td></tr>
+    </table>
+
+
+        </td></tr>
+    </table>
+
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="text" style="border-collapse: collapse;              padding: 6px 40px 6px 40px;              font-family: Helvetica Neue, Arial, sans-serif;">
+            
+
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="" style="border-collapse: collapse;              padding: 12px 0px 12px 0px;              font-family: Helvetica Neue, Arial, sans-serif;">
+        <div style="line_height: 24px; background-color: #e6e6e6; height: 1px;"></div>
+        </td></tr>
+    </table>
+
+                <table border="0" cellpadding="0" cellspacing="0"><tr><td style="height: 12px;"></td></tr></table>
+
+                <div class="mobile-only" style="max-height: 0px; font-size: 0; overflow: hidden; display: none;">
+        <table class="mobile-only" width="100%" style="max-height: 0px; font-size: 0; overflow: hidden; display: none;">
+            <tr><td align="left" style="border-collapse: collapse;                  font-family: Helvetica Neue, Arial, sans-serif;">
+                    <a href="https://www.yelp.com/biz/red-hill-station-san-francisco?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">
+                        <img src="none" alt="" width="100%" style="border-radius: 3px; -webkit-border-radius: 3px;" />
+                    </a>
+            </td></tr>
+        </table>
+    </div>
+
+
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; text-align: left;" width="100%">
+        <tr>
+            <td style="text-align: left;                  vertical-align: top;                  font-size: 0;                  font-family: empty;                  border-collapse: collapse;">
+
+
+
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 16px; font-family: Helvetica Neue, Arial, sans-serif;; vertical-align: top; display: inline-block;">
+        <tr>
+            <td style="border-collapse: collapse;                  padding: 0px 12px 6px 0px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="110">
+                <tr>
+                    <td class="hide-mobile" valign="top" style="">
+                        <a href="https://www.yelp.com/biz/red-hill-station-san-francisco?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">
+                            <img src="none" alt="" width="110" style="border-radius: 3px; -webkit-border-radius: 3px;" />
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+    </table>
+
+
+
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 16px; font-family: Helvetica Neue, Arial, sans-serif;; vertical-align: top; display: inline-block;">
+        <tr>
+            <td style="border-collapse: collapse;                  padding: 0px 0px 6px 0px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="414">
+                <tr>
+                    <td class="content" valign="top" style="">
+        <table border="0" cellpadding="0" cellspacing="0" style="text-align: left;              font-family: Helvetica Neue, Arial, sans-serif;;              color: #333333;">
+            <tr><td valign="top" style="font-family: Helvetica Neue, Arial, sans-serif;;">
+                    <a style="text-decoration: none" href="https://www.yelp.com/biz/red-hill-station-san-francisco?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">
+        <strong style="font-size: 21px;              line-height: 21px;              text-decoration: none;              color: #0073bb;">
+            Red Hill Station
+        </strong>
+    </a>
+
+            </td></tr>
+            <tr><td valign="top" style="font-family: Helvetica Neue, Arial, sans-serif;;                  white-space: nowrap;">
+                
+
+            <table border="0" cellpadding="0" cellspacing="0"><tr><td style="height: 9.0;"></td></tr></table>
+
+        <table border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                            <td>
+        <img alt="4_half star rating" class="rating-image" height="24px" src="none" style="vertical-align: middle; margin-top: -1px; outline: none; border: 0px;" width="132px" />
+    </td>
+
+
+                    <td style="width: 10px;"></td>
+                    <td>
+                        <span style="color: #333333; font-size: 14px; font-family: Helvetica Neue, Arial, sans-serif;;" class="review-count">
+                            351 reviews
+                        </span>
+                    </td>
+            </tr>
+        </table>
+
+            </td></tr>
+            <tr><td valign="top" style="font-family: Helvetica Neue, Arial, sans-serif;;">
+                    <table border="0" cellpadding="0" cellspacing="0">
+            <tr><td style="color: #999999;                      padding: 9.0px 0px 0px 0px;                      font-family: Helvetica Neue, Arial, sans-serif;;                      font-size: 14px;">
+                Seafood
+            </td></tr>
+
+        <tr><td style="color: #333333; padding: 6px 0px; font-size: 14px; font-family: Helvetica Neue, Arial, sans-serif;;">
+            Bernal Heights, 803 Cortland Ave, San Francisco, CA
+        </td></tr>
+    </table>
+
+            </td></tr>
+        </table>
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+    </table>
+            </td>
+        </tr>
+    </table>
+
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="" style="border-collapse: collapse;              padding: 6px 0px 6px 0px;              font-family: Helvetica Neue, Arial, sans-serif;">
+            
+    <table style="">
+        <tr>
+            <td style="padding-top: 6px; vertical-align: top;">
+                    <a href="https://www.yelp.com/biz/red-hill-station-san-francisco?hrid=-uBJkixX-LLU06ByYwG2-Q&amp;ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">
+                    <img src="none" alt="Nevin L." style="border-radius: 3px; width: 40px; -webkit-border-radius: 3px; margin-right: 10px;" />
+                    </a>
+            </td>
+            <td style="vertical-align: top; text-align: left;">
+        <span style="text-align: left;              font-family: Helvetica Neue, Arial, sans-serif;;              font-size: 16px;              line-height: 24px;">
+            <a href="https://www.yelp.com/biz/red-hill-station-san-francisco?hrid=-uBJkixX-LLU06ByYwG2-Q&amp;ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank" style="color: #0073bb; text-decoration: none;">Nevin L.</a> wrote:
+            &#8220;Oyster dozen - 5/5. This came in four different varieties, and all of them had nice contrasting textures. Everything was fresh, and it came with three different sauces so you could put whatever you want on it.&#8221;
+        </span>
+            </td>
+        </tr>
+    </table>
+
+        </td></tr>
+    </table>
+
+
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="" style="border-collapse: collapse;              padding: 6px 0px 6px 0px;              font-family: Helvetica Neue, Arial, sans-serif;">
+                <table border="0" cellpadding="0" cellspacing="0" class="hide-mobile" style="text-align: left;">
+        <tr>
+                <td>
+                    
+
+        
+
+
+        
+    <!--[if mso]&gt;
+    &lt;span style="
+        width: initial;
+        display: inline-block;
+        margin-bottom: 6px;
+        text-align: center;
+        background-color: #f5f5f5;
+        border: 1px solid #bfbfbf;"&gt;
+
+        &lt;a  href="https://www.yelp.com/biz/red-hill-station-san-francisco" target="_blank" style="
+            display: inline-block;
+            text-decoration: none;
+            font-family: Helvetica Neue, Arial, sans-serif;;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333333;
+            width: initial;
+            white-space: nowrap;
+            border-color: #f5f5f5;
+            border-width: 12px 28px;
+            border-style: solid;"&gt;
+            Book Online
+        &lt;/a&gt;
+    &lt;/span&gt;&amp;nbsp; 
+    &lt;div style="display:none;"&gt;
+    &lt;!-[endif]- -->
+
+        
+    <a href="https://www.yelp.com/biz/red-hill-station-san-francisco?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank" style="border-radius: 3px; font-size: 16px; color: #333333; padding: 12px 28px; background: #f5f5f5; white-space: nowrap; font-family: Helvetica Neue, Arial, sans-serif;; border: 1px solid #bfbfbf; text-align: center; background-image: linear-gradient(white, #eee); -webkit-border-radius: 3px; text-decoration: none; width: initial; font-weight: bold; display: inline-block;">
+            <img height="18px" style="padding-right: 6px; vertical-align: text-bottom;" src="none" alt="image" />
+        Book Online
+    </a>
+
+    <!--[if mso]&gt;
+    &lt;/div&gt;
+    &lt;!-[endif]- -->
+
+
+                </td>
+                <td style="width: 12px;"></td>
+        </tr>
+    </table>
+
+    <div class="mobile-only" style="max-height: 0px; font-size: 0; overflow: hidden; display: none;">
+        <table border="0" cellpadding="0" cellspacing="0" class="mobile-only" style="max-height: 0px; font-size: 0; overflow: hidden; display: none;              width: 100%;              text-align: center">
+                <tr><td>
+                    
+
+        
+
+        
+
+        
+    <!--[if mso]&gt;
+    &lt;span style="
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 6px;
+        text-align: center;
+        background-color: #f5f5f5;
+        border: 1px solid #bfbfbf;"&gt;
+
+        &lt;a  href="https://www.yelp.com/biz/red-hill-station-san-francisco" target="_blank" style="
+            display: inline-block;
+            text-decoration: none;
+            font-family: Helvetica Neue, Arial, sans-serif;;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333333;
+            width: 100%;
+            white-space: nowrap;
+            border-color: #f5f5f5;
+            border-width: 12px 0;
+            border-style: solid;"&gt;
+            Book Online
+        &lt;/a&gt;
+    &lt;/span&gt;&amp;nbsp; 
+    &lt;div style="display:none;"&gt;
+    &lt;!-[endif]- -->
+
+        
+    <a href="https://www.yelp.com/biz/red-hill-station-san-francisco?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank" style="border-radius: 3px; font-size: 16px; color: #333333; padding: 12px 0; background: #f5f5f5; white-space: nowrap; font-family: Helvetica Neue, Arial, sans-serif;; border: 1px solid #bfbfbf; text-align: center; background-image: linear-gradient(white, #eee); -webkit-border-radius: 3px; text-decoration: none; width: 100%; font-weight: bold; display: inline-block;">
+            <img height="18px" style="padding-right: 6px; vertical-align: text-bottom;" src="none" alt="image" />
+        Book Online
+    </a>
+
+    <!--[if mso]&gt;
+    &lt;/div&gt;
+    &lt;!-[endif]- -->
+
+
+                </td></tr>
+                <tr><td style="height: 6px;"></td></tr>
+
+        </table>
+    </div>
+
+        </td></tr>
+    </table>
+
+        </td></tr>
+    </table>
+
+
+            
+
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="text" style="border-collapse: collapse;              padding: 12px 40px 12px 40px;              font-family: Helvetica Neue, Arial, sans-serif;">
+        <div style="line_height: 24px; background-color: #e6e6e6; height: 1px;"></div>
+        </td></tr>
+    </table>
+
+            
+        
+
+    <table width="100%" style="border-spacing: 0; text-align: center;">
+        <tr><td class="" style="border-collapse: collapse;              padding: 0px 0px 0px 0px;              font-family: Helvetica Neue, Arial, sans-serif;">
+        
+
+        
+
+
+
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="text" style="border-collapse: collapse;              padding: 12px 40px 12px 40px;              font-family: Helvetica Neue, Arial, sans-serif;">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td align="center">
+                        
+    <!--[if mso]&gt;
+    &lt;span style="
+        width: initial;
+        display: inline-block;
+        margin-bottom: 6px;
+        text-align: center;
+        background-color: #f5f5f5;
+        border: 1px solid #bfbfbf;"&gt;
+
+        &lt;a  href="https://www.yelp.com/local_yelp/A2GCaaoEAtfg6Ol-8omSaw" target="_blank" style="
+            display: inline-block;
+            text-decoration: none;
+            font-family: Helvetica Neue, Arial, sans-serif;;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333333;
+            width: initial;
+            white-space: nowrap;
+            border-color: #f5f5f5;
+            border-width: 12px 28px;
+            border-style: solid;"&gt;
+            Check out more great oysters!
+        &lt;/a&gt;
+    &lt;/span&gt;&amp;nbsp; 
+    &lt;div style="display:none;"&gt;
+    &lt;!-[endif]- -->
+
+        
+    <a href="https://www.yelp.com/local_yelp/A2GCaaoEAtfg6Ol-8omSaw?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank" style="border-radius: 3px; font-size: 16px; color: #333333; padding: 12px 28px; background: #f5f5f5; white-space: nowrap; font-family: Helvetica Neue, Arial, sans-serif;; border: 1px solid #bfbfbf; text-align: center; background-image: linear-gradient(white, #eee); -webkit-border-radius: 3px; text-decoration: none; width: initial; font-weight: bold; display: inline-block;">
+        Check out more great oysters!
+    </a>
+
+    <!--[if mso]&gt;
+    &lt;/div&gt;
+    &lt;!-[endif]- -->
+
+                    </td>
+                </tr>
+            </table>
+        </td></tr>
+    </table>
+
+        </td></tr>
+    </table>
+
+
+            <table border="0" cellpadding="0" cellspacing="0"><tr><td style="height: 18px;"></td></tr></table>
+
+        </td></tr>
+    </table>
+
+            <table border="0" cellpadding="0" cellspacing="0"><tr><td style="height: 18px;"></td></tr></table>
+
+
+
+        
+
+    <table width="100%" style="border-spacing: 0; border-radius: 3px; border-collapse: separate !important; border: 1px solid #e6e6e6; -webkit-border-radius: 3px; background-color: #ffffff;">
+        <tr><td class="" style="border-collapse: collapse;              padding: 6px 0px 6px 0px;              font-family: Helvetica Neue, Arial, sans-serif;">
+            
+
+        
+
+    <table width="100%" style="border-spacing: 0; font-size: 30px; font-weight: bold; margin: 0; line-height: 36px; text-align: left;">
+        <tr><td class="text" style="border-collapse: collapse;              padding: 15px 40px 15px 40px;              font-family: Helvetica Neue, Arial, sans-serif;">
+            Upcoming Popular Events
+        </td></tr>
+    </table>
+
+
+            
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="text" style="border-collapse: collapse;              padding: 6px 40px 6px 40px;              font-family: Helvetica Neue, Arial, sans-serif;">
+                <div class="mobile-only" style="max-height: 0px; font-size: 0; overflow: hidden; display: none;">
+        <table class="mobile-only" width="100%" style="max-height: 0px; font-size: 0; overflow: hidden; display: none;">
+            <tr><td align="left" style="border-collapse: collapse;                  font-family: Helvetica Neue, Arial, sans-serif;">
+                    <a href="https://www.yelp.com/events/san-francisco-the-speakeasy?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">
+                        <img src="none" alt="" width="100%" style="border-radius: 3px; width: 100%; -webkit-border-radius: 3px;" />
+                    </a>
+            </td></tr>
+        </table>
+    </div>
+
+
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; text-align: left;" width="100%">
+        <tr>
+            <td style="text-align: left;                  vertical-align: top;                  font-size: 0;                  font-family: empty;                  border-collapse: collapse;">
+
+
+
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 16px; font-family: Helvetica Neue, Arial, sans-serif;; vertical-align: top; display: inline-block;">
+        <tr>
+            <td style="border-collapse: collapse;                  padding: 0px 12px 6px 0px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="110">
+                <tr>
+                    <td class="hide-mobile" valign="top" style="">
+                        <a href="https://www.yelp.com/events/san-francisco-the-speakeasy?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">
+                            <img src="none" alt="" width="110" style="border-radius: 3px; width: 100%; -webkit-border-radius: 3px;" />
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+    </table>
+
+
+
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 16px; font-family: Helvetica Neue, Arial, sans-serif;; vertical-align: top; display: inline-block;">
+        <tr>
+            <td style="border-collapse: collapse;                  padding: 0px 0px 6px 0px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="414">
+                <tr>
+                    <td class="content" valign="top" style="">
+        <table border="0" cellpadding="0" cellspacing="0" style="text-align: left;">
+            <tr><td style="padding-bottom: 6px;">
+                <a class="title" href="https://www.yelp.com/events/san-francisco-the-speakeasy?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank" style="font-size: 21px;                      line-height: 21px;                      font-weight: bold;                      text-decoration: none;                      font-family: Helvetica Neue, Arial, sans-serif;;                      color: #0073bb;">
+                    The Speakeasy
+                </a>
+            </td></tr>
+            <tr><td style="padding-bottom: 6px;                      text-decoration: none;                      font-family: Helvetica Neue, Arial, sans-serif;;                      font-size: 14px;">
+                    Friday, August 24, 7:30 pm
+            </td></tr>
+            <tr><td style="color: #999999 !important;                      padding-bottom: 6px;                      text-decoration: none;                      font-family: Helvetica Neue, Arial, sans-serif;;                      font-size: 14px;">
+                    North Beach
+                    <br />
+                    Columbus St &amp; Stockton St, San Francisco, CA
+            </td></tr>
+            <tr><td style="text-decoration: none;                      line-height: 24px;                      font-family: Helvetica Neue, Arial, sans-serif;;                      font-size: 16px;">
+                    Step back in time and visit San Francisco's historic North Beach district during prohibition!
+&#8230; <a style="color: #0073bb;" href="https://www.yelp.com/events/san-francisco-the-speakeasy?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">Read more</a>
+            </td></tr>
+        </table>
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+    </table>
+            </td>
+        </tr>
+    </table>
+
+            
+
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="" style="border-collapse: collapse;              padding: 12px 0px 12px 0px;              font-family: Helvetica Neue, Arial, sans-serif;">
+        <div style="line_height: 24px; background-color: #e6e6e6; height: 1px;"></div>
+        </td></tr>
+    </table>
+
+        </td></tr>
+    </table>
+
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="text" style="border-collapse: collapse;              padding: 6px 40px 6px 40px;              font-family: Helvetica Neue, Arial, sans-serif;">
+                <div class="mobile-only" style="max-height: 0px; font-size: 0; overflow: hidden; display: none;">
+        <table class="mobile-only" width="100%" style="max-height: 0px; font-size: 0; overflow: hidden; display: none;">
+            <tr><td align="left" style="border-collapse: collapse;                  font-family: Helvetica Neue, Arial, sans-serif;">
+                    <a href="https://www.yelp.com/events/san-francisco-alison-wonderland-at-bill-graham-civic-auditorium?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">
+                        <img src="none" alt="" width="100%" style="border-radius: 3px; width: 100%; -webkit-border-radius: 3px;" />
+                    </a>
+            </td></tr>
+        </table>
+    </div>
+
+
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; text-align: left;" width="100%">
+        <tr>
+            <td style="text-align: left;                  vertical-align: top;                  font-size: 0;                  font-family: empty;                  border-collapse: collapse;">
+
+
+
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 16px; font-family: Helvetica Neue, Arial, sans-serif;; vertical-align: top; display: inline-block;">
+        <tr>
+            <td style="border-collapse: collapse;                  padding: 0px 12px 6px 0px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="110">
+                <tr>
+                    <td class="hide-mobile" valign="top" style="">
+                        <a href="https://www.yelp.com/events/san-francisco-alison-wonderland-at-bill-graham-civic-auditorium?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">
+                            <img src="none" alt="" width="110" style="border-radius: 3px; width: 100%; -webkit-border-radius: 3px;" />
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+    </table>
+
+
+
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 16px; font-family: Helvetica Neue, Arial, sans-serif;; vertical-align: top; display: inline-block;">
+        <tr>
+            <td style="border-collapse: collapse;                  padding: 0px 0px 6px 0px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="414">
+                <tr>
+                    <td class="content" valign="top" style="">
+        <table border="0" cellpadding="0" cellspacing="0" style="text-align: left;">
+            <tr><td style="padding-bottom: 6px;">
+                <a class="title" href="https://www.yelp.com/events/san-francisco-alison-wonderland-at-bill-graham-civic-auditorium?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank" style="font-size: 21px;                      line-height: 21px;                      font-weight: bold;                      text-decoration: none;                      font-family: Helvetica Neue, Arial, sans-serif;;                      color: #0073bb;">
+                    Alison Wonderland at Bill Graham Civic Auditorium
+                </a>
+            </td></tr>
+            <tr><td style="padding-bottom: 6px;                      text-decoration: none;                      font-family: Helvetica Neue, Arial, sans-serif;;                      font-size: 14px;">
+                    Saturday, August 25, 8:00 pm
+            </td></tr>
+            <tr><td style="color: #999999 !important;                      padding-bottom: 6px;                      text-decoration: none;                      font-family: Helvetica Neue, Arial, sans-serif;;                      font-size: 14px;">
+                    Bill Graham Civic Auditorium
+                    <br />
+                    99 Grove St, San Francisco, CA
+            </td></tr>
+            <tr><td style="text-decoration: none;                      line-height: 24px;                      font-family: Helvetica Neue, Arial, sans-serif;;                      font-size: 16px;">
+                    The title AWAKE came to Wonderland in a dream. "I think it was my subconscious telling me thin&#8230; <a style="color: #0073bb;" href="https://www.yelp.com/events/san-francisco-alison-wonderland-at-bill-graham-civic-auditorium?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">Read more</a>
+            </td></tr>
+        </table>
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+    </table>
+            </td>
+        </tr>
+    </table>
+
+            
+
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="" style="border-collapse: collapse;              padding: 12px 0px 12px 0px;              font-family: Helvetica Neue, Arial, sans-serif;">
+        <div style="line_height: 24px; background-color: #e6e6e6; height: 1px;"></div>
+        </td></tr>
+    </table>
+
+        </td></tr>
+    </table>
+
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="text" style="border-collapse: collapse;              padding: 6px 40px 6px 40px;              font-family: Helvetica Neue, Arial, sans-serif;">
+                <div class="mobile-only" style="max-height: 0px; font-size: 0; overflow: hidden; display: none;">
+        <table class="mobile-only" width="100%" style="max-height: 0px; font-size: 0; overflow: hidden; display: none;">
+            <tr><td align="left" style="border-collapse: collapse;                  font-family: Helvetica Neue, Arial, sans-serif;">
+                    <a href="https://www.yelp.com/events/san-francisco-eat-drink-sf-sunday-afternoon-grand-tasting?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">
+                        <img src="none" alt="" width="100%" style="border-radius: 3px; width: 100%; -webkit-border-radius: 3px;" />
+                    </a>
+            </td></tr>
+        </table>
+    </div>
+
+
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; text-align: left;" width="100%">
+        <tr>
+            <td style="text-align: left;                  vertical-align: top;                  font-size: 0;                  font-family: empty;                  border-collapse: collapse;">
+
+
+
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 16px; font-family: Helvetica Neue, Arial, sans-serif;; vertical-align: top; display: inline-block;">
+        <tr>
+            <td style="border-collapse: collapse;                  padding: 0px 12px 6px 0px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="110">
+                <tr>
+                    <td class="hide-mobile" valign="top" style="">
+                        <a href="https://www.yelp.com/events/san-francisco-eat-drink-sf-sunday-afternoon-grand-tasting?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">
+                            <img src="none" alt="" width="110" style="border-radius: 3px; width: 100%; -webkit-border-radius: 3px;" />
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+    </table>
+
+
+
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 16px; font-family: Helvetica Neue, Arial, sans-serif;; vertical-align: top; display: inline-block;">
+        <tr>
+            <td style="border-collapse: collapse;                  padding: 0px 0px 6px 0px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="414">
+                <tr>
+                    <td class="content" valign="top" style="">
+        <table border="0" cellpadding="0" cellspacing="0" style="text-align: left;">
+            <tr><td style="padding-bottom: 6px;">
+                <a class="title" href="https://www.yelp.com/events/san-francisco-eat-drink-sf-sunday-afternoon-grand-tasting?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank" style="font-size: 21px;                      line-height: 21px;                      font-weight: bold;                      text-decoration: none;                      font-family: Helvetica Neue, Arial, sans-serif;;                      color: #0073bb;">
+                    Eat Drink SF Sunday Afternoon Grand Tasting
+                </a>
+            </td></tr>
+            <tr><td style="padding-bottom: 6px;                      text-decoration: none;                      font-family: Helvetica Neue, Arial, sans-serif;;                      font-size: 14px;">
+                    Sunday, August 26, 12:30 pm &#8211; 4:30 pm
+            </td></tr>
+            <tr><td style="color: #999999 !important;                      padding-bottom: 6px;                      text-decoration: none;                      font-family: Helvetica Neue, Arial, sans-serif;;                      font-size: 14px;">
+                    Fort Mason Center's Festival Pavilion
+                    <br />
+                    2 Marina Blvd, San Francisco, CA
+            </td></tr>
+            <tr><td style="text-decoration: none;                      line-height: 24px;                      font-family: Helvetica Neue, Arial, sans-serif;;                      font-size: 16px;">
+                    Eat Drink SF is a 21+ event. No persons under 21 will be allowed entry (including babies in ca&#8230; <a style="color: #0073bb;" href="https://www.yelp.com/events/san-francisco-eat-drink-sf-sunday-afternoon-grand-tasting?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">Read more</a>
+            </td></tr>
+        </table>
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+    </table>
+            </td>
+        </tr>
+    </table>
+
+            
+
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="" style="border-collapse: collapse;              padding: 12px 0px 12px 0px;              font-family: Helvetica Neue, Arial, sans-serif;">
+        <div style="line_height: 24px; background-color: #e6e6e6; height: 1px;"></div>
+        </td></tr>
+    </table>
+
+        </td></tr>
+    </table>
+
+
+                
+        
+
+    <table width="100%" style="border-spacing: 0; text-align: center;">
+        <tr><td class="" style="border-collapse: collapse;              padding: 0px 0px 0px 0px;              font-family: Helvetica Neue, Arial, sans-serif;">
+        
+
+        
+
+
+
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="text" style="border-collapse: collapse;              padding: 12px 40px 12px 40px;              font-family: Helvetica Neue, Arial, sans-serif;">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td align="center">
+                        
+    <!--[if mso]&gt;
+    &lt;span style="
+        width: initial;
+        display: inline-block;
+        margin-bottom: 6px;
+        text-align: center;
+        background-color: #f5f5f5;
+        border: 1px solid #bfbfbf;"&gt;
+
+        &lt;a  href="https://www.yelp.com/events/sf" target="_blank" style="
+            display: inline-block;
+            text-decoration: none;
+            font-family: Helvetica Neue, Arial, sans-serif;;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333333;
+            width: initial;
+            white-space: nowrap;
+            border-color: #f5f5f5;
+            border-width: 12px 28px;
+            border-style: solid;"&gt;
+            View more great events!
+        &lt;/a&gt;
+    &lt;/span&gt;&amp;nbsp; 
+    &lt;div style="display:none;"&gt;
+    &lt;!-[endif]- -->
+
+        
+    <a href="https://www.yelp.com/events/sf?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank" style="border-radius: 3px; font-size: 16px; color: #333333; padding: 12px 28px; background: #f5f5f5; white-space: nowrap; font-family: Helvetica Neue, Arial, sans-serif;; border: 1px solid #bfbfbf; text-align: center; background-image: linear-gradient(white, #eee); -webkit-border-radius: 3px; text-decoration: none; width: initial; font-weight: bold; display: inline-block;">
+        View more great events!
+    </a>
+
+    <!--[if mso]&gt;
+    &lt;/div&gt;
+    &lt;!-[endif]- -->
+
+                    </td>
+                </tr>
+            </table>
+        </td></tr>
+    </table>
+
+        </td></tr>
+    </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0"><tr><td style="height: 18px;"></td></tr></table>
+
+        </td></tr>
+    </table>
+
+            <table border="0" cellpadding="0" cellspacing="0"><tr><td style="height: 18px;"></td></tr></table>
+
+
+
+        
+
+    <table width="100%" style="border-spacing: 0; border-radius: 3px; border-collapse: separate !important; border: 1px solid #e6e6e6; -webkit-border-radius: 3px; background-color: #ffffff;">
+        <tr><td class="" style="border-collapse: collapse;              padding: 6px 0px 6px 0px;              font-family: Helvetica Neue, Arial, sans-serif;">
+            
+
+        
+
+    <table width="100%" style="border-spacing: 0; font-size: 30px; font-weight: bold; margin: 0; line-height: 36px; text-align: left;">
+        <tr><td class="text" style="border-collapse: collapse;              padding: 15px 40px 15px 40px;              font-family: Helvetica Neue, Arial, sans-serif;">
+            This Issue&#8217;s Sponsor
+        </td></tr>
+    </table>
+
+
+            
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="text" style="border-collapse: collapse;              padding: 6px 40px 6px 40px;              font-family: Helvetica Neue, Arial, sans-serif;">
+    <div class="mobile-only" style="max-height: 0px; font-size: 0; overflow: hidden; display: none;">
+        <table class="mobile-only" width="100%" style="max-height: 0px; font-size: 0; overflow: hidden; display: none;">
+            <tr><td align="left" style="border-collapse: collapse;                  font-family: Helvetica Neue, Arial, sans-serif;">
+                    <a href="https://www.yelp.com/events/jackson-yelps-gold-country-getaway?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">
+                        <img src="none" alt="" width="100%" style="border-radius: 3px; width: 100%; -webkit-border-radius: 3px;" />
+                    </a>
+            </td></tr>
+        </table>
+    </div>
+
+
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; text-align: left;" width="100%">
+        <tr>
+            <td style="text-align: left;                  vertical-align: top;                  font-size: 0;                  font-family: empty;                  border-collapse: collapse;">
+
+
+
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 16px; font-family: Helvetica Neue, Arial, sans-serif;; vertical-align: top; display: inline-block;">
+        <tr>
+            <td style="border-collapse: collapse;                  padding: 0px 12px 6px 0px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="110">
+                <tr>
+                    <td class="hide-mobile" valign="top" style="">
+                        <a href="https://www.yelp.com/events/jackson-yelps-gold-country-getaway?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">
+                            <img src="none" alt="" width="110" style="border-radius: 3px; width: 100%; -webkit-border-radius: 3px;" />
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+    </table>
+
+
+
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; font-size: 16px; font-family: Helvetica Neue, Arial, sans-serif;; vertical-align: top; display: inline-block;">
+        <tr>
+            <td style="border-collapse: collapse;                  padding: 0px 0px 6px 0px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="414">
+                <tr>
+                    <td class="content" valign="top" style="">
+            <table border="0" cellpadding="0" cellspacing="0" style="text-align: left;">
+                <tr><td style="padding-bottom: 6px;">
+                    <a class="title" href="https://www.yelp.com/events/jackson-yelps-gold-country-getaway?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018&amp;tl_sec=sponsor" target="_blank" style="font-size: 21px;                          line-height: 21px;                          font-weight: bold;                          text-decoration: none;                          font-family: Helvetica Neue, Arial, sans-serif;;                          color: #0073bb;">
+                        You're Invited To Yelp's Gold Country Getaway!
+                    </a>
+                </td></tr>
+                <tr><td style="color: #999999 !important;                          padding-bottom: 6px;                          text-decoration: none;                          font-family: Helvetica Neue, Arial, sans-serif;;                          font-size: 14px;">
+                        
+                </td></tr>
+                <tr><td style="text-decoration: none;                          line-height: 24px;                          font-family: Helvetica Neue, Arial, sans-serif;;                          font-size: 16px;">
+                        Join us for a whirlwind weekend with fellow Yelpers in the heart of California&#8217;s Gold Country. Enjoy three days of exclusive gatherings, highly discounted tours, numerous special offers, wine and beer tastings, and amazing historic towns brought to you by the Amador Council of Tourism and Jackson Rancheria Casino Resort. It&#8217;s our next big getaway in our own backyard. For all the details and to RSVP, visit the official Yelp Event page!
+                </td></tr>
+            </table>
+                    </td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+    </table>
+            </td>
+        </tr>
+    </table>
+        </td></tr>
+    </table>
+
+
+                <table border="0" cellpadding="0" cellspacing="0"><tr><td style="height: 18px;"></td></tr></table>
+
+        </td></tr>
+    </table>
+
+        <table border="0" cellpadding="0" cellspacing="0"><tr><td style="height: 18px;"></td></tr></table>
+
+
+
+        
+
+    <table width="100%" style="border-spacing: 0; border-radius: 3px; border-collapse: separate !important; border: 1px solid #e6e6e6; -webkit-border-radius: 3px; background-color: #ffffff; text-align: left;">
+        <tr><td class="" style="border-collapse: collapse;              padding: 6px 0px 6px 0px;              font-family: Helvetica Neue, Arial, sans-serif;">
+            
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="text" style="border-collapse: collapse;              padding: 10px 40px 10px 40px;              font-family: Helvetica Neue, Arial, sans-serif;">
+        <img src="none" style="width: 18px;              padding-right: 12px;              vertical-align: text-bottom" alt="image" />
+        <span style="font-size: 16px;              line-height: 24px;              text-decoration: none;">
+                Your Location: <b>San Francisco</b>. 
+                <a style="text-decoration: none" href="https://www.yelp.com/profile_email_notifications/show_subscriptions?subscription_type=weekly&amp;ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank">Update</a>
+        </span>
+        </td></tr>
+    </table>
+
+        </td></tr>
+    </table>
+
+        </div>
+    </td>
+
+                                    </tr>
+                                        <tr>
+                                            <td style="border-collapse: collapse; padding: 18px 0 0 0; width: 100%;">
+                                                    
+    <table border="0" cellpadding="0" cellspacing="0" style="max-width: 620px; width: 100%; border: 1px solid #e6e6e6; background-color: white; min-width: 320px;" width="100%">
+        <tr>
+            <td valign="center" style="text-align: center;                  vertical-align: middle;                  font-size: 0;                  font-family: empty;                  border-collapse: collapse;                  padding: 20px;">
+                <!--[if gte mso 9]&gt;
+                    &lt;table width='100%'&gt;
+                        &lt;tr&gt;
+                            &lt;td width='280' style='border-collapse: collapse;'&gt;
+                &lt;!-[endif]- -->
+                    <table width="280" style="display: inline-block;          border-collapse: collapse;          font-size: 16px;          font-family: Helvetica Neue, Arial, sans-serif;;          vertical-align: middle;          border-spacing: 0;">
+        <tr>
+            <td style="text-align: left; padding: 0px 10px 4px 0px;">
+                Bring Yelp with you. The fastest way to search for businesses near you.
+            </td>
+        </tr>
+    </table>
+
+                <!--[if gte mso 9]&gt;
+                            &lt;/td&gt;
+                            &lt;td width='288' style='border-collapse: collapse;'&gt;
+                &lt;!-[endif]- -->
+                    <table width="288" style="display: inline-block;          border-collapse: collapse;          font-size: 16px;          font-family: Helvetica Neue, Arial, sans-serif;;          vertical-align: middle;          border-spacing: 0;">
+        <tr>
+            <td style="text-align: center;                  padding: 4px 3px 0px 0px; width: 50%;">
+                    <a href="https://94vs.adj.st/nearby/?adjust_t=u36tky_5h2owb&amp;campaign=local_yelp&amp;creative=apple_btn&amp;adgroup=0" target="_blank" style="border: 0;">
+        <img src="none" alt="Download from App Store" width="140px" style="display: block; border: 0;" />
+    </a>
+
+            </td>
+            <td style="text-align: center;                  padding: 4px 0px 0px 3px; width: 50%;">
+                    <a href="https://app.adjust.io/5h2owb_u36tky?campaign=local_yelp&amp;creative=android_btn&amp;adgroup=0&amp;deep_link=https%3A%2F%2Fyelp.com%3Fcan_modify_open_behavior%3DTrue" target="_blank" style="border: 0;">
+        <img src="none" alt="Download from Play Store" width="140px" style="display: block; border: 0;" />
+    </a>
+
+            </td>
+        </tr>
+    </table>
+
+                <!--[if gte mso 9]&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                &lt;!-[endif]- -->
+            </td>
+        </tr>
+    </table>
+
+
+                                            </td>
+                                        </tr>
+                                    <tr>
+                                        <td style="border-collapse: collapse;">
+
+
+    <table width="100%" style="border-spacing: 0;">
+        <tr><td class="text" style="border-collapse: collapse;              padding: 40px 40px 40px 40px;              font-family: Helvetica Neue, Arial, sans-serif;">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td class="text" align="center" style="border-collapse: collapse; text-align: center;">
+                                                                                <div style="color: #666666" class="apple-links-stylefix">
+            No longer wish to receive this email from Yelp? <a href="https://www.yelp.com/bn/weekly_email/9JS0DrSfq6aSJ1FAjnZIukwPonYtmpkHrireWuKOetSG-QJ_nc7I759YeAW6BOWM/?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank" style="color: #666666; text-decoration: underline;">Unsubscribe</a>. If you need to adjust how much email you get, feel free to <a href="https://www.yelp.com/bn/9JS0DrSfq6aSJ1FAjnZIukwPonYtmpkHrireWuKOetSG-QJ_nc7I759YeAW6BOWM/?ytl_=3d8a39c59db34cbc906e74afce390107&amp;utm_medium=email&amp;utm_source=local_yelp_v2&amp;utm_campaign=Aug-22-2018" target="_blank" style="color: #666666; text-decoration: underline;">update</a> your settings.
+        </div>
+
+        <table border="0" cellpadding="0" cellspacing="0"><tr><td style="height: 1px;"></td></tr></table>
+
+
+    <div style="color: #666666" class="apple-links-no-underline">
+        Copyright &#169; 2018 Yelp Inc., 140 New Montgomery, San Francisco, CA 94105, U.S.A.
+    </div>
+
+        <table border="0" cellpadding="0" cellspacing="0"><tr><td style="height: 24px;"></td></tr></table>
+
+
+    <img width="33" height="42" src="none" alt="Yelp burst" style="border: none;" />
+
+
+
+                                                        </td>
+                                                    </tr>
+                                                </table>
+        </td></tr>
+    </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            <!--[if (gte mso 9)|(IE)]&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;!-[endif]- -->
+        
+<img src="none" alt="" width="1" height="1" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important; border: 0px;" />BPBPBPB}</div></div> <!-- .mailData -->
+<!-- end of $Id: html_mail.php 2629 2014-11-19 15:23:53Z oheil $ -->
+<div class="mailData"></div> <!-- .mailData --><!-- start of $Id: submenu_mail.php 2610 2014-04-28 08:48:56Z oheil $ -->
+<div class="submenu">
+  <ul>
+    <li>
+      <a href="action.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5&action=write">Write</a>
+    </li>
+    <li>
+      <a href="action.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5&action=reply&amp;mail=BPBPBPB{868BPBPBPB}&amp;display_images=0">Reply</a>
+    </li>
+    <li>
+      <a href="action.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5&action=reply_all&amp;mail=BPBPBPB{868BPBPBPB}&amp;display_images=0">Reply all</a>
+    </li>
+    <li>
+      <a href="action.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5&action=forward&amp;mail=BPBPBPB{868BPBPBPB}">Forward</a>
+    </li>
+    <li>
+      <a href="down_mail.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5&mail=BPBPBPB{868BPBPBPB}">Download</a>
+    </li>
+    <li>
+      <a href="delete.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5&delete_mode=1&amp;mail=BPBPBPB{868BPBPBPB}&amp;only_one=1" onclick="if (confirm('Delete selected messages?')) return true; else return false;">Delete</a>
+    </li>
+  </ul>
+</div>
+<!-- end of $Id: submenu_mail.php 2610 2014-04-28 08:48:56Z oheil $ -->
+<!-- start of $Id: menu_mail.php 2713 2017-09-06 12:34:03Z oheil $ -->
+<div class="mainmenu">
+  <ul>
+
+
+
+		<li><a href="action.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5">Back</a></li>
+	    <li>
+
+	
+    <li>
+	<a href="action.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5&folder=INBOX">Inbox<span class="inbox_changed" style="display:none;color:darkred;">!</span></a>
+    </li>
+    <li class="selected">
+      <span>Message</span>
+    </li>
+        <li>
+      <a href="action.php?sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5&action=managefolders" title="Manage IMAP Folders">Folders</a>
+    </li>
+          </ul>
+</div>
+<!-- end of $Id: menu_mail.php 2713 2017-09-06 12:34:03Z oheil $ -->
+<!-- start of $Id: script.php 2255 2017-07-31 07:46:41Z oheil $ -->
+
+<script type="text/javascript">
+	InitInboxChangedHandler(1541,"sname=NOCCLI_3aaff21f66cf73f0f681ae7bbcd207d5",600,"The content of your inbox has changed",1);
+</script>
+
+
+
+<!-- end of $Id: script.php 2255 2017-07-31 07:46:41Z oheil $ -->
+<!-- start of $Id: footer.php 2255 2010-06-28 07:46:41Z gerundt $ -->
+    </div>
+        <div id="footer">
+            <a href="http://nocc.sourceforge.net" target="_blank">
+                <img src="themes/standard/img/button.png" id="footerLogo" alt="Powered by NOCC" />
+            </a>
+        </div>
+    </body>
+</html>
+<!-- end of $Id: footer.php 2255 2010-06-28 07:46:41Z gerundt $ -->

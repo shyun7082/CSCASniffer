@@ -1,0 +1,237 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="x-dns-prefetch-control" content="off">
+<script type="text/javascript" language="JavaScript">
+<!--
+if (self != top) { try { if (document.domain != top.document.domain) { throw "Clickjacking security violation! Please log out immediately!"; /* this code should never execute - exception should already have been thrown since it's a security violation in this case to even try to access top.document.domain (but it's left here just to be extra safe) */ } } catch (e) { self.location = "/squirrelmail/src/signout.php"; top.location = "/squirrelmail/src/signout.php" } }
+// -->
+</script>
+
+<title>SquirrelMail 1.4.23 [SVN]</title>
+<script language="JavaScript" type="text/javascript">
+<!--
+function sendMDN() {
+    mdnuri=window.location+'&sendreceipt=1';
+    window.location = mdnuri;
+
+}
+
+// -->
+</script>
+
+<!--[if IE 6]>
+<style type="text/css">
+/* avoid stupid IE6 bug with frames and scrollbars */
+body {
+    width: expression(document.documentElement.clientWidth - 30);
+}
+</style>
+<![endif]-->
+
+</head>
+
+<body text="#000000" bgcolor="#ffffff" link="#0000cc" vlink="#0000cc" alink="#0000cc" >
+
+<a name="pagetop"></a>
+<table bgcolor="#ffffff" border="0" width="100%" cellspacing="0" cellpadding="2">
+
+<tr bgcolor="#ababab">
+
+<td align="left">
+
+         Current Folder: <b>INBOX&nbsp;</b>
+      </td>
+<td align="right">
+<b>
+<a href="/squirrelmail/src/signout.php" target="_top">Sign Out</a></b></td>
+   </tr>
+<tr bgcolor="#ffffff">
+
+<td align="left">
+
+<a href="/squirrelmail/src/compose.php?mailbox=INBOX&amp;startMessage=1">Compose</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/addressbook.php">Addresses</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/folders.php">Folders</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/options.php">Options</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/search.php?mailbox=INBOX">Search</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/help.php">Help</a>&nbsp;&nbsp;
+      </td>
+<td align="right">
+
+<a href="http://squirrelmail.org/" target="_blank">SquirrelMail</a></td>
+   </tr>
+</table><br>
+
+BPBPBPB{<table width="100%" cellpadding="3" cellspacing="0" align="center" border="0" bgcolor="#ababab"><tr><td align="left" width="33%">
+<small><a href="/squirrelmail/src/right_main.php?sort=6&amp;startMessage=1&amp;mailbox=INBOX">Message List</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/right_main.php?unread_passed_id=865&amp;sort=6&amp;startMessage=1&amp;mailbox=INBOX">Unread</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/delete_message.php?mailbox=INBOX&amp;message=865&amp;smtoken=vjbBGkp6XHEi&amp;sort=6&amp;startMessage=1">Delete</a></small></td><td align="center" width="33%"><small>Previous&nbsp;|&nbsp;Next</small></td>
+<td align="right" width="33%" nowrap>
+<small><a href="/squirrelmail/src/compose.php?passed_id=865&amp;mailbox=INBOX&amp;startMessage=1&amp;passed_ent_id=0&amp;smaction=forward">Forward</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/compose.php?passed_id=865&amp;mailbox=INBOX&amp;startMessage=1&amp;passed_ent_id=0&amp;smaction=forward_as_attachment">Forward as Attachment</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/compose.php?passed_id=865&amp;mailbox=INBOX&amp;startMessage=1&amp;passed_ent_id=0&amp;smaction=reply">Reply</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/compose.php?passed_id=865&amp;mailbox=INBOX&amp;startMessage=1&amp;passed_ent_id=0&amp;smaction=reply_all">Reply All</a></small></td></tr></table>BPBPBPB}<table bgcolor="#ababab" width="100%" cellpadding="1" cellspacing="0" border="0" align="center">
+<tr><td height="5" colspan="2" bgcolor="#ffffff"></td></tr><tr><td align="center">
+<table width="100%" cellpadding="0" cellspacing="2" border="0" align="center" bgcolor="#dcdcdc"><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{SubjectBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{Which programming language is used for making Windows 10?BPBPBPB}</td>
+
+</tr><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{FromBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{&quot;Quora&#32;Digest&quot;&#32;&lt;digest-noreply@quora.com&gt;BPBPBPB}</td>
+
+</tr><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{DateBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{Tue, August 21, 2018 12:49 pmBPBPBPB}</td>
+
+</tr><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{ToBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{brandonpaulsen8@gmail.comBPBPBPB}</td>
+
+</tr><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{PriorityBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{NormalBPBPBPB}</td>
+
+</tr><tr>
+<td align="right" valign="middle" width="20%">
+<b>Options:&nbsp;&nbsp;</b></td>
+<td align="left" valign="middle" width="80%">
+<small><a href="/squirrelmail/src/view_header.php?mailbox=INBOX&amp;passed_id=865&amp;passed_ent_id=0">View Full Header</a>&nbsp;|&nbsp;<script language="javascript" type="text/javascript">
+<!--
+  function printFormat() {
+    window.open("../src/printer_friendly_main.php?passed_ent_id=0&mailbox=INBOX&passed_id=865&view_unsafe_images=","Print","width=800,height=600");
+  }
+// -->
+</script>
+<a href="javascript:printFormat();">View Printable Version</a>
+BPBPBPB{&nbsp;|&nbsp;<a href="download.php?absolute_dl=true&amp;passed_id=865&amp;ent_id=1&amp;mailbox=INBOX&amp;sort=6&amp;startMessage=1&amp;show_more=0&amp;passed_ent_id=0">Download this as a file</a>BPBPBPB}</small></td>
+</tr>
+</table></td></tr><tr><td height="5" colspan="2" bgcolor="#ffffff"></td></tr>
+</table><table width="100%" cellpadding="0" cellspacing="0" align="center" border="0">  <tr><td>    <table width="100%" cellpadding="1" cellspacing="0" align="center" border="0" bgcolor="#ababab">      <tr><td>        <table width="100%" cellpadding="3" cellspacing="0" align="center" border="0">          <tr bgcolor="#ffffff"><td><table align="left" cellpadding="1" cellspacing="5" border="0">
+              <tr><td align="left"><br />BPBPBPB{<pre>Brandon's Digest
+Your Quora Digest
+
+-----
+
+
+Question: Which programming language is used for making Windows 10?
+
+Answer from Axel Rietschin
+
+Windows 10 is the same (evolved) code base as the code base of Windows 8.x, 7,
+Vista, XP, 2000, and NT, where each generation saw significant refactoring, and
+added substantia
+Read More:
+<a href="http://www.quora.com/Which-programming-language-is-used-for-making-Windows-10#ans95533389" target="_blank">http://www.quora.com/Which-programming-language-is-used-for-making-Windows-10#ans95533389</a>
+-----
+Question: What will tanks look like in 40 years?
+
+Answer from Bryce Kroll
+
+My vote is that military engineers will finally come to their senses, and realize
+the only effective tank is 20X the size of a House.
+
+Maybe they will finally understand that 
+Read More: <a href="http://www.quora.com/What-will-tanks-look-like-in-40-years#ans23736379" target="_blank">http://www.quora.com/What-will-tanks-look-like-in-40-years#ans23736379</a>
+-----
+Question: Is pork harmful meat?
+
+Answer from Susanna Viljanen
+
+In the past, yes; today, no.
+
+The reason is that pigs are a vector of trichinella worm [
+en-wikipedia-org/wiki/Trichinell... ], a harmful parasite, also known as trichin,
+whic
+Read More: <a href="http://www.quora.com/Is-pork-harmful-meat#ans94402955" target="_blank">http://www.quora.com/Is-pork-harmful-meat#ans94402955</a>
+-----
+Question: Is It bad to use .equals() instead of == when comparing strings in Java?
+
+Answer from Alan Mellor
+
+Other way around. It&#8217;s bad to use == because it doesn&#8217;t work properly.
+
+Always use .equals() to compare two strings.
+
+Equals checks character by character that the two strings
+Read More:
+<a href="http://www.quora.com/Is-It-bad-to-use-equals-instead-of-when-comparing-strings-in-Java#ans96040703" target="_blank">http://www.quora.com/Is-It-bad-to-use-equals-instead-of-when-comparing-strings-in-Java#ans96040703</a>
+-----
+Question: How can you be that good that you can live from only investing?
+
+Answer from Doug Hilton
+
+A lot of it is luck. 27 years ago, I inherited $10k. I&#8217;m one of the most responsible
+people in the world. I didn&#8217;t have any debt, or a credit card. My occupation was
+helping o
+Read More:
+<a href="http://www.quora.com/How-can-you-be-that-good-that-you-can-live-from-only-investing#ans56836090" target="_blank">http://www.quora.com/How-can-you-be-that-good-that-you-can-live-from-only-investing#ans56836090</a>
+-----
+Question: Were the Challenger astronauts still alive when they hit the ocean?
+
+Answer from Alan Hayes
+
+Alive untill impact? Yes. Awake and aware? Unknown for sure, but there is some
+anecdotal evidence that would point toward yes. First off, most of the astronauts
+wore a kneepad
+Read More:
+<a href="http://www.quora.com/Were-the-Challenger-astronauts-still-alive-when-they-hit-the-ocean#ans95667056" target="_blank">http://www.quora.com/Were-the-Challenger-astronauts-still-alive-when-they-hit-the-ocean#ans95667056</a>
+-----
+Question: As a technology company, does Amazon use more Python than R for Data
+Science projects?
+
+Answer from Keegan McNamara
+
+Amazon offices, circa 2018.
+
+Me: Hey, Will, does Sarah (my manager) give two shits about what we code in?
+
+Will: Dude, write in assembly for all she cares. I submitted a code 
+Read More:
+<a href="http://www.quora.com/As-a-technology-company-does-Amazon-use-more-Python-than-R-for-Data-Science-projects#ans95368784" target="_blank">http://www.quora.com/As-a-technology-company-does-Amazon-use-more-Python-than-R-for-Data-Science-projects#ans95368784</a>
+-----
+Question: How do naval ships (air craft carriers) keep easy to expire food items
+such as milk and fruit fresh while at sea?
+
+Answer from Timothy Mauch
+
+&#8220;How do naval ships (air craft carriers) keep easy to expire food items such as milk
+and fruit fresh while at sea? [ www-quora-com/How-do-naval-ships... ]&#8221;
+
+Naval ships (ESPEC
+Read More:
+<a href="http://www.quora.com/How-do-naval-ships-air-craft-carriers-keep-easy-to-expire-food-items-such-as-milk-and-fruit-fresh-while-at-sea#ans94747716" target="_blank">http://www.quora.com/How-do-naval-ships-air-craft-carriers-keep-easy-to-expire-food-items-such-as-milk-and-fruit-fresh-while-at-sea#ans94747716</a>
+-----
+Question: What are the theories about Arya Stark?
+
+Answer from Giselle Norman
+
+Anomymous: One problem with 3:
+
+Arya cannot marry Gendry, she's already the Bride of the Stranger. There are hints
+of this allover the book: If Gendry marries her, touches her
+Read More: <a href="http://www.quora.com/What-are-the-theories-about-Arya-Stark#ans9049879" target="_blank">http://www.quora.com/What-are-the-theories-about-Arya-Stark#ans9049879</a>
+-----
+Question: Is it safe to use Java on a web project or will it die soon due to NodeJS
+and Go?
+
+Answer from Alan Mellor
+
+I&#8217;m trying to understand your thinking here, so let&#8217;s try and turn it round.
+
+Say you decide that Java is going to die next week, so you choose Go. that&#8217;s modern!
+Shiny! Simpl
+Read More:
+<a href="http://www.quora.com/Is-it-safe-to-use-Java-on-a-web-project-or-will-it-die-soon-due-to-NodeJS-and-Go#ans95475085" target="_blank">http://www.quora.com/Is-it-safe-to-use-Java-on-a-web-project-or-will-it-die-soon-due-to-NodeJS-and-Go#ans95475085</a>
+-----
+
+-----
+To control which emails we send you, visit:
+<a href="https://www.quora.com/qemail/track_click?aoid&amp;aoty=14&amp;aty=4&amp;click_pos=0&amp;ct=1534880971531556&amp;et=2&amp;id=740812e776bc42c1b8f3359ea8099a40&amp;request_id=2118499726830249128&amp;source&amp;src=1&amp;st=1534880971531556&amp;stories=1_4fELzC9iItj%7C1_zz3GkhkoGX7%7C1_bxU1igBphHA%7C1_VvCoo4nCSP8%7C1_VQ3PrHTHiOQ%7C1_MWRj8z76upQ%7C1_47xZQkW1e81%7C1_zl7GUywb03y%7C1_XxhhUQEchvy%7C1_1dxyMfYyCH1&amp;ty&amp;ty_data&amp;uid=Vu0jGgWZcxZ&amp;v=0" target="_blank">https://www.quora.com/qemail/track_click?aoid&amp;aoty=14&amp;aty=4&amp;click_pos=0&amp;ct=1534880971531556&amp;et=2&amp;id=740812e776bc42c1b8f3359ea8099a40&amp;request_id=2118499726830249128&amp;source&amp;src=1&amp;st=1534880971531556&amp;stories=1_4fELzC9iItj%7C1_zz3GkhkoGX7%7C1_bxU1igBphHA%7C1_VvCoo4nCSP8%7C1_VQ3PrHTHiOQ%7C1_MWRj8z76upQ%7C1_47xZQkW1e81%7C1_zl7GUywb03y%7C1_XxhhUQEchvy%7C1_1dxyMfYyCH1&amp;ty&amp;ty_data&amp;uid=Vu0jGgWZcxZ&amp;v=0</a>
+
+To unsubscribe from these emails, visit:
+<a href="http://www.quora.com/email_optout/qemail_optout?code=70ebe2f04c9d3de4d3147ccf00a5313b&amp;email=brandonpaulsen8%40gmail.com&amp;email_track_id=740812e776bc42c1b8f3359ea8099a40&amp;type=2" target="_blank">http://www.quora.com/email_optout/qemail_optout?code=70ebe2f04c9d3de4d3147ccf00a5313b&amp;email=brandonpaulsen8%40gmail.com&amp;email_track_id=740812e776bc42c1b8f3359ea8099a40&amp;type=2</a></pre>BPBPBPB}
+</td>
+</tr>            </table>          </td></tr>        </table></td></tr>    </table>  </td></tr><tr><td height="5" colspan="2" bgcolor="#ffffff"></td></tr>
+  <tr><td>    <table width="100%" cellpadding="1" cellspacing="0" align="center" border="0" bgcolor="#ababab">     <tr><td>       <table width="100%" cellpadding="0" cellspacing="0" align="center" border="0" bgcolor="#ffffff">        <tr><td bgcolor="#ababab" align="left">
+           <b>Attachments:</b>        </td></tr>        <tr><td>          <table width="100%" cellpadding="2" cellspacing="2" align="center" border="0" bgcolor="#dcdcdc"><tr><td>BPBPBPB{<tr><td><a href="../src/view_text.php?passed_id=865&amp;mailbox=INBOX&amp;sort=6&amp;startMessage=1&amp;show_more=0&amp;override_type0=text&amp;override_type1=html&amp;ent_id=2">untitled-[2].html</a>&nbsp;</td><td><small><b>105<small>&nbsp;k</small></b>&nbsp;&nbsp;</small></td><td><small>[ text/html ]&nbsp;</small></td><td><small><b></b></small></td><td><small>&nbsp;<a href="../src/download.php?absolute_dl=true&amp;passed_id=865&amp;mailbox=INBOX&amp;ent_id=2">Download</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="../src/view_text.php?passed_id=865&amp;mailbox=INBOX&amp;sort=6&amp;startMessage=1&amp;show_more=0&amp;override_type0=text&amp;override_type1=html&amp;ent_id=2">View</a></td></tr>
+BPBPBPB}          </td></tr></table>       </td></tr></table>    </td></tr></table>  </td></tr><tr><td height="5" colspan="2" bgcolor="#ffffff"></td></tr></table></body></html>

@@ -1,0 +1,85 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+    <title>PHP iAddressBook</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link rel="shortcut icon" href="/iaddressbook-instr/lib/tpl/default/images/favicon.ico" />
+    <link rel="stylesheet" media="screen" type="text/css" href="/iaddressbook-instr/lib/tpl/default/design.css" />
+
+    <script>
+    <!--
+        window.onload = function () {
+            if(document.f.u.value.length > 0) {
+                document.f.p.focus();
+            } else {
+                document.f.u.focus();
+            }
+        }
+    -->
+    </script>
+
+</head>
+
+<body>
+
+
+<div class="mainview">
+
+    <!-- Begin Logo -->
+    <table border="0" width="100%">
+        <tr>
+            <td>
+                <div class="logo">
+                    <img src="/iaddressbook-instr/lib/tpl/default/images/logo.png">
+                </div>
+            </td>
+            <td>
+                <div class="title">
+                    PHP iAddressBook                </div>
+            </td>
+        </tr>
+    </table>
+    <!-- End Logo -->
+
+    <div style="height: 4em;"></div>
+        <div style="height: 1em;"></div>
+    
+    <div class="centeralign">
+        <!-- Username = demo <br> -->
+        <!-- Password = demo <br> -->
+        <form action="" accept-charset="utf-8" method="post" name='f'>
+          <fieldset>
+            <legend>Login</legend>
+            <label class="block">
+                <span>Username</span>
+                <input type="text" name="u" value="" class="edit" />
+            </label><br />
+            <label class="block">
+                <span>Password</span>
+                <input type="password" name="p" class="edit" />
+            </label><br />
+            <input type="checkbox" name="r" />
+            <span>Remember me</span>
+            <br /><br />
+                
+            <input type="submit" value="Login" class="button" />
+          </fieldset>
+        </form>
+    </div>
+
+    <div style="height: 4em;"></div>
+
+    <!-- Begin Footer --> 
+    <div class="separator">&nbsp;</div>
+    <div class="footer">
+        <a href='http://iaddressbook.org/'>PHP iAddressbook 3.1-166
+</a>
+    </div>
+    <!-- End Footer --> 
+
+
+</div>
+
+</body>
+</html>

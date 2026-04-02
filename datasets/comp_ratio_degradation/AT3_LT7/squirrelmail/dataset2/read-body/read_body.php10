@@ -1,0 +1,240 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="x-dns-prefetch-control" content="off">
+<script type="text/javascript" language="JavaScript">
+<!--
+if (self != top) { try { if (document.domain != top.document.domain) { throw "Clickjacking security violation! Please log out immediately!"; /* this code should never execute - exception should already have been thrown since it's a security violation in this case to even try to access top.document.domain (but it's left here just to be extra safe) */ } } catch (e) { self.location = "/squirrelmail/src/signout.php"; top.location = "/squirrelmail/src/signout.php" } }
+// -->
+</script>
+
+<title>SquirrelMail 1.4.23 [SVN]</title>
+<script language="JavaScript" type="text/javascript">
+<!--
+function sendMDN() {
+    mdnuri=window.location+'&sendreceipt=1';
+    window.location = mdnuri;
+
+}
+
+// -->
+</script>
+
+<!--[if IE 6]>
+<style type="text/css">
+/* avoid stupid IE6 bug with frames and scrollbars */
+body {
+    width: expression(document.documentElement.clientWidth - 30);
+}
+</style>
+<![endif]-->
+
+</head>
+
+<body text="#000000" bgcolor="#ffffff" link="#0000cc" vlink="#0000cc" alink="#0000cc" >
+
+<a name="pagetop"></a>
+<table bgcolor="#ffffff" border="0" width="100%" cellspacing="0" cellpadding="2">
+
+<tr bgcolor="#ababab">
+
+<td align="left">
+
+         Current Folder: <b>INBOX&nbsp;</b>
+      </td>
+<td align="right">
+<b>
+<a href="/squirrelmail/src/signout.php" target="_top">Sign Out</a></b></td>
+   </tr>
+<tr bgcolor="#ffffff">
+
+<td align="left">
+
+<a href="/squirrelmail/src/compose.php?mailbox=INBOX&amp;startMessage=16">Compose</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/addressbook.php">Addresses</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/folders.php">Folders</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/options.php">Options</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/search.php?mailbox=INBOX">Search</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/help.php">Help</a>&nbsp;&nbsp;
+      </td>
+<td align="right">
+
+<a href="http://squirrelmail.org/" target="_blank">SquirrelMail</a></td>
+   </tr>
+</table><br>
+
+BPBPBPB{<table width="100%" cellpadding="3" cellspacing="0" align="center" border="0" bgcolor="#ababab"><tr><td align="left" width="33%">
+<small><a href="/squirrelmail/src/right_main.php?sort=6&amp;startMessage=16&amp;mailbox=INBOX">Message List</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/right_main.php?unread_passed_id=847&amp;sort=6&amp;startMessage=16&amp;mailbox=INBOX">Unread</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/delete_message.php?mailbox=INBOX&amp;message=847&amp;smtoken=vjbBGkp6XHEi&amp;sort=6&amp;startMessage=16">Delete</a></small></td><td align="center" width="33%"><small>Previous&nbsp;|&nbsp;Next</small></td>
+<td align="right" width="33%" nowrap>
+<small><a href="/squirrelmail/src/compose.php?passed_id=847&amp;mailbox=INBOX&amp;startMessage=16&amp;passed_ent_id=0&amp;smaction=forward">Forward</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/compose.php?passed_id=847&amp;mailbox=INBOX&amp;startMessage=16&amp;passed_ent_id=0&amp;smaction=forward_as_attachment">Forward as Attachment</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/compose.php?passed_id=847&amp;mailbox=INBOX&amp;startMessage=16&amp;passed_ent_id=0&amp;smaction=reply">Reply</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/compose.php?passed_id=847&amp;mailbox=INBOX&amp;startMessage=16&amp;passed_ent_id=0&amp;smaction=reply_all">Reply All</a></small></td></tr></table>BPBPBPB}<table bgcolor="#ababab" width="100%" cellpadding="1" cellspacing="0" border="0" align="center">
+<tr><td height="5" colspan="2" bgcolor="#ffffff"></td></tr><tr><td align="center">
+<table width="100%" cellpadding="0" cellspacing="2" border="0" align="center" bgcolor="#dcdcdc"><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{SubjectBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{I need to learn both Python and Java. Those are very important skills for searching m...?BPBPBPB}</td>
+
+</tr><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{FromBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{&quot;Quora&#32;Digest&quot;&#32;&lt;digest-noreply@quora.com&gt;BPBPBPB}</td>
+
+</tr><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{DateBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{Wed, August 15, 2018 2:12 pmBPBPBPB}</td>
+
+</tr><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{ToBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{brandonpaulsen8@gmail.comBPBPBPB}</td>
+
+</tr><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{PriorityBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{NormalBPBPBPB}</td>
+
+</tr><tr>
+<td align="right" valign="middle" width="20%">
+<b>Options:&nbsp;&nbsp;</b></td>
+<td align="left" valign="middle" width="80%">
+<small><a href="/squirrelmail/src/view_header.php?mailbox=INBOX&amp;passed_id=847&amp;passed_ent_id=0">View Full Header</a>&nbsp;|&nbsp;<script language="javascript" type="text/javascript">
+<!--
+  function printFormat() {
+    window.open("../src/printer_friendly_main.php?passed_ent_id=0&mailbox=INBOX&passed_id=847&view_unsafe_images=","Print","width=800,height=600");
+  }
+// -->
+</script>
+<a href="javascript:printFormat();">View Printable Version</a>
+BPBPBPB{&nbsp;|&nbsp;<a href="download.php?absolute_dl=true&amp;passed_id=847&amp;ent_id=1&amp;mailbox=INBOX&amp;sort=6&amp;startMessage=16&amp;show_more=0&amp;passed_ent_id=0">Download this as a file</a>BPBPBPB}</small></td>
+</tr>
+</table></td></tr><tr><td height="5" colspan="2" bgcolor="#ffffff"></td></tr>
+</table><table width="100%" cellpadding="0" cellspacing="0" align="center" border="0">  <tr><td>    <table width="100%" cellpadding="1" cellspacing="0" align="center" border="0" bgcolor="#ababab">      <tr><td>        <table width="100%" cellpadding="3" cellspacing="0" align="center" border="0">          <tr bgcolor="#ffffff"><td><table align="left" cellpadding="1" cellspacing="5" border="0">
+              <tr><td align="left"><br />BPBPBPB{<pre>Brandon's Digest
+Your Quora Digest
+
+-----
+
+
+Question: I need to learn both Python and Java. Those are very important skills for
+searching my jobs. I am proficient at C/C++. What should I start first?
+
+Answer from Mario Galindo Queralt
+
+Sorry, but I can't believe you are proficient at C/C++. If you would proficient at
+C++, you will be not making such a question. &#8220;I have won formula one several times.
+How can 
+Read More:
+<a href="http://www.quora.com/I-need-to-learn-both-Python-and-Java-Those-are-very-important-skills-for-searching-my-jobs-I-am-proficient-at-C-C++-What-should-I-start-first#ans94834357" target="_blank">http://www.quora.com/I-need-to-learn-both-Python-and-Java-Those-are-very-important-skills-for-searching-my-jobs-I-am-proficient-at-C-C++-What-should-I-start-first#ans94834357</a>
+-----
+Question: Is Unity 3D worth learning?
+
+Answer from Daniel Super
+
+It depends on how motivated you are to make games.
+
+If you just kinda like the idea of making games because you like playing games but
+will give up when you realize that makin
+Read More: <a href="http://www.quora.com/Is-Unity-3D-worth-learning#ans17008841" target="_blank">http://www.quora.com/Is-Unity-3D-worth-learning#ans17008841</a>
+-----
+Question: If you make hard boiled eggs that are hard to peel, is there an easy fix?
+
+Answer from Michael Barnard
+
+There is actually an answer to this, but there is no fix for eggs which are already
+boiled and hard to peel.
+
+The good news is that hard boiled eggs can be made more quickly, 
+Read More:
+<a href="http://www.quora.com/If-you-make-hard-boiled-eggs-that-are-hard-to-peel-is-there-an-easy-fix#ans93666078" target="_blank">http://www.quora.com/If-you-make-hard-boiled-eggs-that-are-hard-to-peel-is-there-an-easy-fix#ans93666078</a>
+-----
+Question: Why was Paul McCartney refused a part on Pink Floyd's The Dark Side of the
+Moon?
+
+Answer from Paul Farr
+
+Paul and Linda were brought in to record voice tracks for background. Roger Waters
+would hold up cards with questions on them like &#8220;Are you frightened of dying?&#8221; for
+people to
+Read More:
+<a href="http://www.quora.com/Why-was-Paul-McCartney-refused-a-part-on-Pink-Floyds-The-Dark-Side-of-the-Moon#ans94695224" target="_blank">http://www.quora.com/Why-was-Paul-McCartney-refused-a-part-on-Pink-Floyds-The-Dark-Side-of-the-Moon#ans94695224</a>
+-----
+Question: How much do you earn as a programmer? Which languages and frameworks do
+you use on a daily basis? Where do you live? What has been your overall work
+experience so far?
+
+Answer from Kim Rautio
+
+Before answering the questions I think it&#8217;s important to mention my backgrounds.
+I&#8217;m software engineer student (bachelor&#8217;s degree), I have studied for 3 years now
+and should g
+Read More:
+<a href="http://www.quora.com/How-much-do-you-earn-as-a-programmer-Which-languages-and-frameworks-do-you-use-on-a-daily-basis-Where-do-you-live-What-has-been-your-overall-work-experience-so-far#ans93626172" target="_blank">http://www.quora.com/How-much-do-you-earn-as-a-programmer-Which-languages-and-frameworks-do-you-use-on-a-daily-basis-Where-do-you-live-What-has-been-your-overall-work-experience-so-far#ans93626172</a>
+-----
+Question: What's something on an employee's first day that sets off red flags?
+
+Answer from Jerald Cole
+
+I reluctantly hired a guy as a research technician, just because he was better than
+anyone else who&#8217;d applied for the job, even if he wasn&#8217;t an ideal match.
+
+His first day on 
+Read More:
+<a href="http://www.quora.com/Whats-something-on-an-employees-first-day-that-sets-off-red-flags#ans88227262" target="_blank">http://www.quora.com/Whats-something-on-an-employees-first-day-that-sets-off-red-flags#ans88227262</a>
+-----
+Question: How can you make spaghetti so that the sauce sticks to the noodles?
+
+Answer from John Freitas
+
+The answer is Liquid Gold.
+
+When boiling your pasta, the starch will leech off of the pasta into the water
+giving it a yellowish tint. Most people will simply pour this water 
+Read More:
+<a href="http://www.quora.com/How-can-you-make-spaghetti-so-that-the-sauce-sticks-to-the-noodles#ans93716272" target="_blank">http://www.quora.com/How-can-you-make-spaghetti-so-that-the-sauce-sticks-to-the-noodles#ans93716272</a>
+-----
+Question: Have you ever read a line of code that offended you?
+
+Answer from Bryan Williams
+
+This wasn&#8217;t code, but a database query behind a report at a new job. I was trying to
+decipher a 900-line SQL statement that joined 11 tables from an ERP system and gave
+them t
+Read More:
+<a href="http://www.quora.com/Have-you-ever-read-a-line-of-code-that-offended-you#ans94110958" target="_blank">http://www.quora.com/Have-you-ever-read-a-line-of-code-that-offended-you#ans94110958</a>
+-----
+Question: Should I attend Purdue or Stanford? I live close to Purdue, but I want to
+live and work in California.
+
+Answer from Ilya Veygman
+
+As someone who went to Purdue for undergrad and Stanford for graduate school, let me
+give you the following advice:
+
+Get out while you can.
+
+I was like you once, and quite hes
+Read More:
+<a href="http://www.quora.com/Should-I-attend-Purdue-or-Stanford-I-live-close-to-Purdue-but-I-want-to-live-and-work-in-California#ans698985" target="_blank">http://www.quora.com/Should-I-attend-Purdue-or-Stanford-I-live-close-to-Purdue-but-I-want-to-live-and-work-in-California#ans698985</a>
+-----
+Question: How did Taco Bell get so popular when it's low-quality, over-priced and
+not even real tacos?
+
+Answer from Martin Bayer
+
+Taco Bell&#8217;s appeal lies in its low price and variety. You can get a whole bunch of
+low priced food, which contains some fresh ingredients, in a hurry.
+
+They never claimed that
+Read More:
+<a href="http://www.quora.com/How-did-Taco-Bell-get-so-popular-when-its-low-quality-over-priced-and-not-even-real-tacos#ans89516138" target="_blank">http://www.quora.com/How-did-Taco-Bell-get-so-popular-when-its-low-quality-over-priced-and-not-even-real-tacos#ans89516138</a>
+-----
+
+-----
+To control which emails we send you, visit:
+<a href="https://www.quora.com/qemail/track_click?aoid&amp;aoty=14&amp;aty=4&amp;click_pos=0&amp;ct=1534367568286430&amp;et=2&amp;id=9bd4598fe9b74e47941708d6cbed1f45&amp;request_id=1615022094068510949&amp;source&amp;src=1&amp;st=1534367568286430&amp;stories=1_RwcmHFEcFkd%7C1_LYiLA1U5SSS%7C1_jHvwvMnHYzr%7C1_FlFoba171C6%7C1_z1t1jCWCsld%7C1_8mJJVNZPE4D%7C1_F1rfdVhyLsW%7C1_mUgu0y1Xvcj%7C1_MFOuJTYdBlQ%7C1_MbF94NpAZL2&amp;ty&amp;ty_data&amp;uid=Vu0jGgWZcxZ&amp;v=0" target="_blank">https://www.quora.com/qemail/track_click?aoid&amp;aoty=14&amp;aty=4&amp;click_pos=0&amp;ct=1534367568286430&amp;et=2&amp;id=9bd4598fe9b74e47941708d6cbed1f45&amp;request_id=1615022094068510949&amp;source&amp;src=1&amp;st=1534367568286430&amp;stories=1_RwcmHFEcFkd%7C1_LYiLA1U5SSS%7C1_jHvwvMnHYzr%7C1_FlFoba171C6%7C1_z1t1jCWCsld%7C1_8mJJVNZPE4D%7C1_F1rfdVhyLsW%7C1_mUgu0y1Xvcj%7C1_MFOuJTYdBlQ%7C1_MbF94NpAZL2&amp;ty&amp;ty_data&amp;uid=Vu0jGgWZcxZ&amp;v=0</a>
+
+To unsubscribe from these emails, visit:
+<a href="http://www.quora.com/email_optout/qemail_optout?code=70ebe2f04c9d3de4d3147ccf00a5313b&amp;email=brandonpaulsen8%40gmail.com&amp;email_track_id=9bd4598fe9b74e47941708d6cbed1f45&amp;type=2" target="_blank">http://www.quora.com/email_optout/qemail_optout?code=70ebe2f04c9d3de4d3147ccf00a5313b&amp;email=brandonpaulsen8%40gmail.com&amp;email_track_id=9bd4598fe9b74e47941708d6cbed1f45&amp;type=2</a></pre>BPBPBPB}
+</td>
+</tr>            </table>          </td></tr>        </table></td></tr>    </table>  </td></tr><tr><td height="5" colspan="2" bgcolor="#ffffff"></td></tr>
+  <tr><td>    <table width="100%" cellpadding="1" cellspacing="0" align="center" border="0" bgcolor="#ababab">     <tr><td>       <table width="100%" cellpadding="0" cellspacing="0" align="center" border="0" bgcolor="#ffffff">        <tr><td bgcolor="#ababab" align="left">
+           <b>Attachments:</b>        </td></tr>        <tr><td>          <table width="100%" cellpadding="2" cellspacing="2" align="center" border="0" bgcolor="#dcdcdc"><tr><td>BPBPBPB{<tr><td><a href="../src/view_text.php?passed_id=847&amp;mailbox=INBOX&amp;sort=6&amp;startMessage=16&amp;show_more=0&amp;override_type0=text&amp;override_type1=html&amp;ent_id=2">untitled-[2].html</a>&nbsp;</td><td><small><b>102<small>&nbsp;k</small></b>&nbsp;&nbsp;</small></td><td><small>[ text/html ]&nbsp;</small></td><td><small><b></b></small></td><td><small>&nbsp;<a href="../src/download.php?absolute_dl=true&amp;passed_id=847&amp;mailbox=INBOX&amp;ent_id=2">Download</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="../src/view_text.php?passed_id=847&amp;mailbox=INBOX&amp;sort=6&amp;startMessage=16&amp;show_more=0&amp;override_type0=text&amp;override_type1=html&amp;ent_id=2">View</a></td></tr>
+BPBPBPB}          </td></tr></table>       </td></tr></table>    </td></tr></table>  </td></tr><tr><td height="5" colspan="2" bgcolor="#ffffff"></td></tr></table></body></html>

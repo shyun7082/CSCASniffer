@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>NOCC - Webmail</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="themes/standard/style.css" rel="stylesheet" type="text/css" />
+        <link href="themes/standard/print.css" rel="stylesheet" media="print" type="text/css" />
+        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <script src="js/nocc.js" type="text/javascript"></script>
+    </head>
+    <body dir="ltr">
+        <div id="header">
+            <h1>NOCC</h1>
+        </div>
+        <div id="main">
+<!-- end of $Id: header.php 2682 2016-09-14 14:50:40Z oheil $ -->
+            <form action="action.php?sname=NOCC_e8436b03b47ab9135eab68198dc41965" method="post" id="nocc_webmail_login" accept-charset="UTF-8">
+            <div id="loginBox">
+              <h2>Welcome to NOCC</h2>
+              <input type="hidden" name="folder" value="INBOX" />
+              <input type="hidden" name="action" value="login" />
+              <table>
+                <tr>
+<!-- abcdefghijklmnopqrstuvwxyz 01234567890 -->
+<!-- abcdefghijklmnopqrstuvwxyz 01234567890 -->
+<!-- abcdefghijklmnopqrstuvwxyz 01234567890 -->
+<!-- abcdefghijklmnopqrstuvwxyz 01234567890 -->
+<!-- abcdefghijklmnopqrstuvwxyz 01234567890 -->
+<!-- abcdefghijklmnopqrstuvwxyz 01234567890 -->
+<!-- abcdefghijklmnopqrstuvwxyz 01234567890 -->
+<!-- abcdefghijklmnopqrstuvwxyz 01234567890 -->
+<!-- abcdefghijklmnopqrstuvwxyz 01234567890 -->
+<!-- abcdefghijklmnopqrstuvwxyz 01234567890 -->
+<!-- abcdefghijklmnopqrstuvwxyz 01234567890 -->
+<!-- abcdefghijklmnopqrstuvwxyz 01234567890 -->
+                  <th><label for="user">User:</label></th>
+                  <td>
+                    <input class="button" type="text" name="user" id="user" size="15" value=""/>
+                    <input type="hidden" name="domainnum" value="0" id="domainnum" />
+                  </td>
+                </tr>
+                <tr> 
+                  <th><label for="passwd">Password:</label></th>
+                  <td> 
+                    <input class="button" type="password" name="passwd" id="passwd" size="15" />
+                  </td>
+                </tr>
+                                <tr>
+                  <th><label for="lang">Language:</label></th>
+                  <td>
+                  <select class="button" name="lang" id="lang" onchange="updateLoginPage()">
+                  <option value="af">Afrikaans</option><option value="an">Aragon&eacute;s</option><option value="ar">العربية</option><option value="arz">مصرى</option><option value="be-tarask">Беларуская (тарашкевіца)</option><option value="bg">Български</option><option value="br">Brezhoneg</option><option value="bs">Bosanski</option><option value="ca">Catal&agrave;</option><option value="cs">Česky</option><option value="cy">Cymraeg</option><option value="da">Dansk</option><option value="dsb">Dolnoserbski</option><option value="de">Deutsch</option><option value="gsw">Deutsch (Schweiz)</option><option value="en" selected="selected">English</option><option value="el">&Epsilon;&lambda;&lambda;&eta;&nu;&iota;&kappa;ά</option><option value="es">Espa&ntilde;ol</option><option value="eu">Euskara</option><option value="fa">فارسی</option><option value="fr">Fran&ccedil;ais</option><option value="ga">Gaeilge</option><option value="gl">Galego</option><option value="haw">Hawai`i</option><option value="he">עברית</option><option value="hr">Hrvatski</option><option value="hsb">Hornjoserbsce</option><option value="ia">Interlingua</option><option value="id">Bahasa Indonesia</option><option value="is">&Iacute;slenska</option><option value="it">Italiano</option><option value="lv">Latviesu</option><option value="lb">L&euml;tzebuergesch</option><option value="hu">Magyar</option><option value="mk">Македонски</option><option value="ms">Bahasa Melayu</option><option value="ne">नेपाली</option><option value="nl">Nederlands</option><option value="nn">Norsk nynorsk</option><option value="oc">Occitan</option><option value="pl">Polski</option><option value="ps">پښتو</option><option value="pt">Portugu&ecirc;s</option><option value="pt-br">Portugu&ecirc;s Brasileiro</option><option value="ksh">Ripoarisch</option><option value="ro">Rom&acirc;nă</option><option value="ru">Русский</option><option value="sk">Slovenčina</option><option value="sl">Sloven&scaron;čina</option><option value="sr">Srpski</option><option value="sr-ec">Српски (ћирилица)</option><option value="fi">Suomi</option><option value="sv">Svenska</option><option value="tl">Tagalog</option><option value="th">ไทย</option><option value="tr">T&uuml;rk&ccedil;e</option><option value="uk">Українська</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="zh-hans">中文</option><option value="zh-hant">‪中文（繁體）</option><option value="ta">‪தமிழ்</option><option value="ka">ქართული</option>                  </select>
+                  </td>
+                </tr>
+                                <tr>
+                <th><label for="theme">Theme:</label></th>
+                <td>
+                <select class="button" name="theme" id="theme" onchange="updateLoginPage()">
+                <option value="newlook_v2">newlook_v2</option><option value="blue">blue</option><option value="standard" selected="selected">standard</option><option value="newlook">newlook</option>                </select>
+                </td>
+                </tr>
+                              </table>
+              <p><input name="enter" class="button" type="submit" value="Login" /></p>
+            </div>
+            </form>
+            <script type="text/javascript">
+            <!--
+                document.getElementById("nocc_webmail_login").user.focus();
+                document.getElementById("nocc_webmail_login").passwd.value='';
+            // -->
+            </script>
+<!-- start of $Id: footer.php 2255 2010-06-28 07:46:41Z gerundt $ -->
+    </div>
+        <div id="footer">
+            <a href="http://nocc.sourceforge.net" target="_blank">
+                <img src="themes/standard/img/button.png" id="footerLogo" alt="Powered by NOCC" />
+            </a>
+        </div>
+    </body>
+</html>
+<!-- end of $Id: footer.php 2255 2010-06-28 07:46:41Z gerundt $ -->

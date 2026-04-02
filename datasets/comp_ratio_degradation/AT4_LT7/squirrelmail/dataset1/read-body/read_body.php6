@@ -1,0 +1,243 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="x-dns-prefetch-control" content="off">
+<script type="text/javascript" language="JavaScript">
+<!--
+if (self != top) { try { if (document.domain != top.document.domain) { throw "Clickjacking security violation! Please log out immediately!"; /* this code should never execute - exception should already have been thrown since it's a security violation in this case to even try to access top.document.domain (but it's left here just to be extra safe) */ } } catch (e) { self.location = "/squirrelmail/src/signout.php"; top.location = "/squirrelmail/src/signout.php" } }
+// -->
+</script>
+
+<title>SquirrelMail 1.4.23 [SVN]</title>
+<script language="JavaScript" type="text/javascript">
+<!--
+function sendMDN() {
+    mdnuri=window.location+'&sendreceipt=1';
+    window.location = mdnuri;
+
+}
+
+// -->
+</script>
+
+<!--[if IE 6]>
+<style type="text/css">
+/* avoid stupid IE6 bug with frames and scrollbars */
+body {
+    width: expression(document.documentElement.clientWidth - 30);
+}
+</style>
+<![endif]-->
+
+</head>
+
+<body text="#000000" bgcolor="#ffffff" link="#0000cc" vlink="#0000cc" alink="#0000cc" >
+
+<a name="pagetop"></a>
+<table bgcolor="#ffffff" border="0" width="100%" cellspacing="0" cellpadding="2">
+
+<tr bgcolor="#ababab">
+
+<td align="left">
+
+         Current Folder: <b>INBOX&nbsp;</b>
+      </td>
+<td align="right">
+<b>
+<a href="/squirrelmail/src/signout.php" target="_top">Sign Out</a></b></td>
+   </tr>
+<tr bgcolor="#ffffff">
+
+<td align="left">
+
+<a href="/squirrelmail/src/compose.php?mailbox=INBOX&amp;startMessage=1">Compose</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/addressbook.php">Addresses</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/folders.php">Folders</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/options.php">Options</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/search.php?mailbox=INBOX">Search</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/help.php">Help</a>&nbsp;&nbsp;
+      </td>
+<td align="right">
+
+<a href="http://squirrelmail.org/" target="_blank">SquirrelMail</a></td>
+   </tr>
+</table><br>
+
+BPBPBPB{<table width="100%" cellpadding="3" cellspacing="0" align="center" border="0" bgcolor="#ababab"><tr><td align="left" width="33%">
+<small><a href="/squirrelmail/src/right_main.php?sort=6&amp;startMessage=1&amp;mailbox=INBOX">Message List</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/right_main.php?unread_passed_id=855&amp;sort=6&amp;startMessage=1&amp;mailbox=INBOX">Unread</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/delete_message.php?mailbox=INBOX&amp;message=855&amp;smtoken=vjbBGkp6XHEi&amp;sort=6&amp;startMessage=1">Delete</a></small></td><td align="center" width="33%"><small>Previous&nbsp;|&nbsp;Next</small></td>
+<td align="right" width="33%" nowrap>
+<small><a href="/squirrelmail/src/compose.php?passed_id=855&amp;mailbox=INBOX&amp;startMessage=1&amp;passed_ent_id=0&amp;smaction=forward">Forward</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/compose.php?passed_id=855&amp;mailbox=INBOX&amp;startMessage=1&amp;passed_ent_id=0&amp;smaction=forward_as_attachment">Forward as Attachment</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/compose.php?passed_id=855&amp;mailbox=INBOX&amp;startMessage=1&amp;passed_ent_id=0&amp;smaction=reply">Reply</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/compose.php?passed_id=855&amp;mailbox=INBOX&amp;startMessage=1&amp;passed_ent_id=0&amp;smaction=reply_all">Reply All</a></small></td></tr></table>BPBPBPB}<table bgcolor="#ababab" width="100%" cellpadding="1" cellspacing="0" border="0" align="center">
+<tr><td height="5" colspan="2" bgcolor="#ffffff"></td></tr><tr><td align="center">
+<table width="100%" cellpadding="0" cellspacing="2" border="0" align="center" bgcolor="#dcdcdc"><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{SubjectBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{Why is JavaScript called the most confusing web programming language?BPBPBPB}</td>
+
+</tr><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{FromBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{&quot;Quora&#32;Digest&quot;&#32;&lt;digest-noreply@quora.com&gt;BPBPBPB}</td>
+
+</tr><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{DateBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{Fri, August 17, 2018 12:33 pmBPBPBPB}</td>
+
+</tr><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{ToBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{brandonpaulsen8@gmail.comBPBPBPB}</td>
+
+</tr><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{PriorityBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{NormalBPBPBPB}</td>
+
+</tr><tr>
+<td align="right" valign="middle" width="20%">
+<b>Options:&nbsp;&nbsp;</b></td>
+<td align="left" valign="middle" width="80%">
+<small><a href="/squirrelmail/src/view_header.php?mailbox=INBOX&amp;passed_id=855&amp;passed_ent_id=0">View Full Header</a>&nbsp;|&nbsp;<script language="javascript" type="text/javascript">
+<!--
+  function printFormat() {
+    window.open("../src/printer_friendly_main.php?passed_ent_id=0&mailbox=INBOX&passed_id=855&view_unsafe_images=","Print","width=800,height=600");
+  }
+// -->
+</script>
+<a href="javascript:printFormat();">View Printable Version</a>
+BPBPBPB{&nbsp;|&nbsp;<a href="download.php?absolute_dl=true&amp;passed_id=855&amp;ent_id=1&amp;mailbox=INBOX&amp;sort=6&amp;startMessage=1&amp;show_more=0&amp;passed_ent_id=0">Download this as a file</a>BPBPBPB}</small></td>
+</tr>
+</table></td></tr><tr><td height="5" colspan="2" bgcolor="#ffffff"></td></tr>
+</table><table width="100%" cellpadding="0" cellspacing="0" align="center" border="0">  <tr><td>    <table width="100%" cellpadding="1" cellspacing="0" align="center" border="0" bgcolor="#ababab">      <tr><td>        <table width="100%" cellpadding="3" cellspacing="0" align="center" border="0">          <tr bgcolor="#ffffff"><td><table align="left" cellpadding="1" cellspacing="5" border="0">
+              <tr><td align="left"><br />BPBPBPB{<pre>Brandon's Digest
+Your Quora Digest
+
+-----
+
+
+Question: Why is JavaScript called the most confusing web programming language?
+
+Answer from Logan Darklock
+
+Because of this:
+
+[code]5 + 5
+[/code]You can tell me what this is, right? It&#8217;s [code ]10[/code], that&#8217;s right.
+
+What about this?
+
+[code]5 + '5'
+[/code]This is [code ]'55'[/cod
+Read More:
+<a href="http://www.quora.com/Why-is-JavaScript-called-the-most-confusing-web-programming-language#ans95281901" target="_blank">http://www.quora.com/Why-is-JavaScript-called-the-most-confusing-web-programming-language#ans95281901</a>
+-----
+Question: What are some things which the vast majority of people think are true
+because of movies but are in fact total rubbish?
+
+Answer from Murad James
+
+DROWNING! It's almost always portrayed incorrectly in films / movies. As a SCUBA
+Instructor, I have seen people get into difficulty in the water. People who are
+drowning do no
+Read More:
+<a href="http://www.quora.com/What-are-some-things-which-the-vast-majority-of-people-think-are-true-because-of-movies-but-are-in-fact-total-rubbish#ans21031228" target="_blank">http://www.quora.com/What-are-some-things-which-the-vast-majority-of-people-think-are-true-because-of-movies-but-are-in-fact-total-rubbish#ans21031228</a>
+-----
+Question: What bands or performers are notorious for sounding terrible live?
+
+Answer from Jeff Carlson
+
+After over 50 years of going to live shows and concerts, I've seen the good, the bad
+and the ugly in varying degrees of quality, but two bands stick out in my mind and
+strange
+Read More:
+<a href="http://www.quora.com/What-bands-or-performers-are-notorious-for-sounding-terrible-live#ans95134410" target="_blank">http://www.quora.com/What-bands-or-performers-are-notorious-for-sounding-terrible-live#ans95134410</a>
+-----
+Question: Is there anything you don&#8217;t like about Functional Programming?
+
+Answer from Jussi Raunio
+
+I don&#8217;t like the fact that functional programming from computer hardware point of
+view is just a big hoax. Don&#8217;t get me wrong; I rarely touch any other programming
+language th
+Read More:
+<a href="http://www.quora.com/Is-there-anything-you-don-t-like-about-Functional-Programming#ans95197019" target="_blank">http://www.quora.com/Is-there-anything-you-don-t-like-about-Functional-Programming#ans95197019</a>
+-----
+Question: Is Python more useful (powerful) than Ruby or JavaScript (Node.js)?
+
+Answer from Tim Mensch
+
+I play competitive badminton. It's great exercise, and it's a lot of fun.
+
+I play twice a week with several of the best players in the state. I'm always trying
+to improve my s
+Read More:
+<a href="http://www.quora.com/Is-Python-more-useful-powerful-than-Ruby-or-JavaScript-Node-js#ans94328273" target="_blank">http://www.quora.com/Is-Python-more-useful-powerful-than-Ruby-or-JavaScript-Node-js#ans94328273</a>
+-----
+Question: I am 24 now, have zero knowledge about investment, stocks etc., I am very
+much interested in investments, how should I start?
+
+Answer from Joseph Holleman
+
+I have been an independent trader for over 33 years. I have traded through every
+bear and bull market since the mid 1970s. And this is what I would tell my own child
+if they c
+Read More:
+<a href="http://www.quora.com/I-am-24-now-have-zero-knowledge-about-investment-stocks-etc-I-am-very-much-interested-in-investments-how-should-I-start#ans56138893" target="_blank">http://www.quora.com/I-am-24-now-have-zero-knowledge-about-investment-stocks-etc-I-am-very-much-interested-in-investments-how-should-I-start#ans56138893</a>
+-----
+Question: Why do user inputs in Java seem unnecessarily hard?
+
+Answer from Alan Mellor
+
+Because you have not wrapped them up into your own specific UserInput class:
+
+[code]UserInput userInput = new UserInput();
+
+display( &quot;What is your name?&quot; );
+String name = user
+Read More:
+<a href="http://www.quora.com/Why-do-user-inputs-in-Java-seem-unnecessarily-hard#ans95597079" target="_blank">http://www.quora.com/Why-do-user-inputs-in-Java-seem-unnecessarily-hard#ans95597079</a>
+-----
+Question: What did the Yardbirds think of The Beatles?
+
+Answer from Alex Johnston
+
+Eric Clapton was not the first lead guitarist in the Yardbirds, but he did start to
+approach fame while in them, and by the time he left, he was already pretty
+well-known.
+
+He
+Read More: <a href="http://www.quora.com/What-did-the-Yardbirds-think-of-The-Beatles#ans95025881" target="_blank">http://www.quora.com/What-did-the-Yardbirds-think-of-The-Beatles#ans95025881</a>
+-----
+Question: Cersei gave birth to 4 children, not 3. So, is Maggy the Frog's prophecy
+wrong?
+
+Answer from Todd Gardiner
+
+You are welcome to interpret the words as you wish, but when Cersei asks Maggy the
+Frog if she and the king will have children, the answer is &#8220; Oh, aye. Six-and-ten
+for him, a
+Read More:
+<a href="http://www.quora.com/Cersei-gave-birth-to-4-children-not-3-So-is-Maggy-the-Frogs-prophecy-wrong#ans50643957" target="_blank">http://www.quora.com/Cersei-gave-birth-to-4-children-not-3-So-is-Maggy-the-Frogs-prophecy-wrong#ans50643957</a>
+-----
+Question: How is Smalltalk different from other languages like C++, Java, Ruby,
+Python, C#, Eiffel, etc., in terms of object-oriented principles?
+
+Answer from Bruce Richardson
+
+If you mean Smalltalk the language, it has almost no object-oriented principles at all.
+
+1. You can send messages to things
+2. What those things do with the messages is entire
+Read More:
+<a href="http://www.quora.com/How-is-Smalltalk-different-from-other-languages-like-C-Java-Ruby-Python-C-Eiffel-etc-in-terms-of-object-oriented-principles#ans95355143" target="_blank">http://www.quora.com/How-is-Smalltalk-different-from-other-languages-like-C-Java-Ruby-Python-C-Eiffel-etc-in-terms-of-object-oriented-principles#ans95355143</a>
+-----
+
+-----
+To control which emails we send you, visit:
+<a href="https://www.quora.com/qemail/track_click?aoid&amp;aoty=14&amp;aty=4&amp;click_pos=0&amp;ct=1534534401751429&amp;et=2&amp;id=9fe72a74312a4948b646d947331b5034&amp;request_id=26034812975443964&amp;source&amp;src=1&amp;st=1534534401751429&amp;stories=1_mU8jpdTZWNU%7C1_zqqdemrOzN4%7C1_LD6f42lDhSA%7C1_9GwcY91yeYB%7C1_LxLs5m3tuR4%7C1_1MNANa6THLY%7C1_jjavEB89Mrh%7C1_YTYZgYyclgr%7C1_V4bUXaxP0Fm%7C1_0YVIvfYHDA&amp;ty&amp;ty_data&amp;uid=Vu0jGgWZcxZ&amp;v=0" target="_blank">https://www.quora.com/qemail/track_click?aoid&amp;aoty=14&amp;aty=4&amp;click_pos=0&amp;ct=1534534401751429&amp;et=2&amp;id=9fe72a74312a4948b646d947331b5034&amp;request_id=26034812975443964&amp;source&amp;src=1&amp;st=1534534401751429&amp;stories=1_mU8jpdTZWNU%7C1_zqqdemrOzN4%7C1_LD6f42lDhSA%7C1_9GwcY91yeYB%7C1_LxLs5m3tuR4%7C1_1MNANa6THLY%7C1_jjavEB89Mrh%7C1_YTYZgYyclgr%7C1_V4bUXaxP0Fm%7C1_0YVIvfYHDA&amp;ty&amp;ty_data&amp;uid=Vu0jGgWZcxZ&amp;v=0</a>
+
+To unsubscribe from these emails, visit:
+<a href="http://www.quora.com/email_optout/qemail_optout?code=70ebe2f04c9d3de4d3147ccf00a5313b&amp;email=brandonpaulsen8%40gmail.com&amp;email_track_id=9fe72a74312a4948b646d947331b5034&amp;type=2" target="_blank">http://www.quora.com/email_optout/qemail_optout?code=70ebe2f04c9d3de4d3147ccf00a5313b&amp;email=brandonpaulsen8%40gmail.com&amp;email_track_id=9fe72a74312a4948b646d947331b5034&amp;type=2</a></pre>BPBPBPB}
+</td>
+</tr>            </table>          </td></tr>        </table></td></tr>    </table>  </td></tr><tr><td height="5" colspan="2" bgcolor="#ffffff"></td></tr>
+  <tr><td>    <table width="100%" cellpadding="1" cellspacing="0" align="center" border="0" bgcolor="#ababab">     <tr><td>       <table width="100%" cellpadding="0" cellspacing="0" align="center" border="0" bgcolor="#ffffff">        <tr><td bgcolor="#ababab" align="left">
+           <b>Attachments:</b>        </td></tr>        <tr><td>          <table width="100%" cellpadding="2" cellspacing="2" align="center" border="0" bgcolor="#dcdcdc"><tr><td>BPBPBPB{<tr><td><a href="../src/view_text.php?passed_id=855&amp;mailbox=INBOX&amp;sort=6&amp;startMessage=1&amp;show_more=0&amp;override_type0=text&amp;override_type1=html&amp;ent_id=2">untitled-[2].html</a>&nbsp;</td><td><small><b>103<small>&nbsp;k</small></b>&nbsp;&nbsp;</small></td><td><small>[ text/html ]&nbsp;</small></td><td><small><b></b></small></td><td><small>&nbsp;<a href="../src/download.php?absolute_dl=true&amp;passed_id=855&amp;mailbox=INBOX&amp;ent_id=2">Download</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="../src/view_text.php?passed_id=855&amp;mailbox=INBOX&amp;sort=6&amp;startMessage=1&amp;show_more=0&amp;override_type0=text&amp;override_type1=html&amp;ent_id=2">View</a></td></tr>
+BPBPBPB}          </td></tr></table>       </td></tr></table>    </td></tr></table>  </td></tr><tr><td height="5" colspan="2" bgcolor="#ffffff"></td></tr></table></body></html>

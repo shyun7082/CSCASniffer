@@ -1,0 +1,163 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="x-dns-prefetch-control" content="off">
+<script type="text/javascript" language="JavaScript">
+<!--
+if (self != top) { try { if (document.domain != top.document.domain) { throw "Clickjacking security violation! Please log out immediately!"; /* this code should never execute - exception should already have been thrown since it's a security violation in this case to even try to access top.document.domain (but it's left here just to be extra safe) */ } } catch (e) { self.location = "/squirrelmail/src/signout.php"; top.location = "/squirrelmail/src/signout.php" } }
+// -->
+</script>
+
+<title>SquirrelMail 1.4.23 [SVN]</title>
+<script language="JavaScript" type="text/javascript">
+<!--
+function sendMDN() {
+    mdnuri=window.location+'&sendreceipt=1';
+    window.location = mdnuri;
+
+}
+
+// -->
+</script>
+
+<!--[if IE 6]>
+<style type="text/css">
+/* avoid stupid IE6 bug with frames and scrollbars */
+body {
+    width: expression(document.documentElement.clientWidth - 30);
+}
+</style>
+<![endif]-->
+
+</head>
+
+<body text="#000000" bgcolor="#ffffff" link="#0000cc" vlink="#0000cc" alink="#0000cc" >
+
+<a name="pagetop"></a>
+<table bgcolor="#ffffff" border="0" width="100%" cellspacing="0" cellpadding="2">
+
+<tr bgcolor="#ababab">
+
+<td align="left">
+
+         Current Folder: <b>INBOX&nbsp;</b>
+      </td>
+<td align="right">
+<b>
+<a href="/squirrelmail/src/signout.php" target="_top">Sign Out</a></b></td>
+   </tr>
+<tr bgcolor="#ffffff">
+
+<td align="left">
+
+<a href="/squirrelmail/src/compose.php?mailbox=INBOX&amp;startMessage=0">Compose</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/addressbook.php">Addresses</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/folders.php">Folders</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/options.php">Options</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/search.php?mailbox=INBOX">Search</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/help.php">Help</a>&nbsp;&nbsp;
+      </td>
+<td align="right">
+
+<a href="http://squirrelmail.org/" target="_blank">SquirrelMail</a></td>
+   </tr>
+</table><br>
+
+BPBPBPB{<table width="100%" cellpadding="3" cellspacing="0" align="center" border="0" bgcolor="#ababab"><tr><td align="left" width="33%">
+<small><a href="/squirrelmail/src/right_main.php?sort=6&amp;startMessage=0&amp;mailbox=INBOX">Message List</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/right_main.php?unread_passed_id=850&amp;sort=6&amp;startMessage=0&amp;mailbox=INBOX">Unread</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/delete_message.php?mailbox=INBOX&amp;message=850&amp;smtoken=vjbBGkp6XHEi&amp;sort=6&amp;startMessage=0">Delete</a></small></td><td align="center" width="33%"><small>Previous&nbsp;|&nbsp;Next</small></td>
+<td align="right" width="33%" nowrap>
+<small><a href="/squirrelmail/src/compose.php?passed_id=850&amp;mailbox=INBOX&amp;startMessage=0&amp;passed_ent_id=0&amp;smaction=forward">Forward</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/compose.php?passed_id=850&amp;mailbox=INBOX&amp;startMessage=0&amp;passed_ent_id=0&amp;smaction=forward_as_attachment">Forward as Attachment</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/compose.php?passed_id=850&amp;mailbox=INBOX&amp;startMessage=0&amp;passed_ent_id=0&amp;smaction=reply">Reply</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/compose.php?passed_id=850&amp;mailbox=INBOX&amp;startMessage=0&amp;passed_ent_id=0&amp;smaction=reply_all">Reply All</a></small></td></tr></table>BPBPBPB}<table bgcolor="#ababab" width="100%" cellpadding="1" cellspacing="0" border="0" align="center">
+<tr><td height="5" colspan="2" bgcolor="#ffffff"></td></tr><tr><td align="center">
+<table width="100%" cellpadding="0" cellspacing="2" border="0" align="center" bgcolor="#dcdcdc"><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{SubjectBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{New Information About Film AvailabilityBPBPBPB}</td>
+
+</tr><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{FromBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{Mitch Lowe, CEO of MoviePass&#32;&lt;noreply@moviepass.com&gt;BPBPBPB}</td>
+
+</tr><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{DateBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{Thu, August 16, 2018 11:26 amBPBPBPB}</td>
+
+</tr><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{ToBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{Brandon Paulsen&#32;&lt;brandonpaulsen8@gmail.com&gt;BPBPBPB}</td>
+
+</tr><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{PriorityBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{NormalBPBPBPB}</td>
+
+</tr><tr>
+<td align="right" valign="middle" width="20%">
+<b>Options:&nbsp;&nbsp;</b></td>
+<td align="left" valign="middle" width="80%">
+<small><a href="/squirrelmail/src/view_header.php?mailbox=INBOX&amp;passed_id=850&amp;passed_ent_id=0">View Full Header</a>&nbsp;|&nbsp;<script language="javascript" type="text/javascript">
+<!--
+  function printFormat() {
+    window.open("../src/printer_friendly_main.php?passed_ent_id=0&mailbox=INBOX&passed_id=850&view_unsafe_images=","Print","width=800,height=600");
+  }
+// -->
+</script>
+<a href="javascript:printFormat();">View Printable Version</a>
+BPBPBPB{&nbsp;|&nbsp;<a href="download.php?absolute_dl=true&amp;passed_id=850&amp;ent_id=1&amp;mailbox=INBOX&amp;sort=6&amp;startMessage=0&amp;show_more=0&amp;passed_ent_id=0">Download this as a file</a>BPBPBPB}</small></td>
+</tr>
+</table></td></tr><tr><td height="5" colspan="2" bgcolor="#ffffff"></td></tr>
+</table><table width="100%" cellpadding="0" cellspacing="0" align="center" border="0">  <tr><td>    <table width="100%" cellpadding="1" cellspacing="0" align="center" border="0" bgcolor="#ababab">      <tr><td>        <table width="100%" cellpadding="3" cellspacing="0" align="center" border="0">          <tr bgcolor="#ffffff"><td><table align="left" cellpadding="1" cellspacing="5" border="0">
+              <tr><td align="left"><br />BPBPBPB{<pre>
+
+View this email in your browser
+(<a href="https://mailchi.mp/moviepass/new-information-about-film-availability?e=0ba12ac4d0" target="_blank">https://mailchi.mp/moviepass/new-information-about-film-availability?e=0ba12ac4d0</a>)
+
+To our members:
+
+Today we are rolling out our new subscription plan that was announced last week. We
+believe this new model provides great value to the MoviePass community and, equally
+important, ensures that we can continue to provide these benefits for you to enjoy
+into the future.
+
+As we transition to the new subscription plan, we want to share more details about
+our service moving forward as part of our commitment to keep you fully informed. For
+the time being, we will be limiting the films and showtimes that are available to
+members each day. During this transition period, MoviePass will offer up to six
+films to choose from daily, including a selection of major studio first-run films
+and independent releases. In addition, showtime availability may be limited
+depending on the popularity of those films on the app that particular day.
+
+While the films and showtimes available in the app will change daily, the schedule
+of available film selections will be published at least a week in advance on the
+MoviePass website so members can plan ahead for the films they want to see. Click
+here to see the current schedule
+(<a href="https://moviepass.com/movies/?utm_source=MoviePass+Members&amp;utm_campaign=b50320a6c5-EMAIL_CAMPAIGN_2018_08_15_07_48&amp;utm_medium=email&amp;utm_term=0_e87fefd0da-b50320a6c5-106742353" target="_blank">https://moviepass.com/movies/?utm_source=MoviePass+Members&amp;utm_campaign=b50320a6c5-EMAIL_CAMPAIGN_2018_08_15_07_48&amp;utm_medium=email&amp;utm_term=0_e87fefd0da-b50320a6c5-106742353</a>)
+. Please note that e-ticketing will continue to include ALL movies and showtimes
+with no restrictions. Because actual availability will change daily, we encourage
+our members to always check the MoviePass app before leaving for the theater.
+
+As we celebrate the one-year anniversary of our $9.95 subscription offering, we want
+to thank you -- our millions of members -- for your loyalty and for your continued
+support. We&#8217;ll have some exciting updates on additional features and service
+offerings -- that will bring greater value to you as a member -- in the near future.
+
+Mitch Lowe
+
+============================================================
+**
+(<a href="https://twitter.com/MoviePass?utm_source=MoviePass+Members&amp;utm_campaign=b50320a6c5-EMAIL_CAMPAIGN_2018_08_15_07_48&amp;utm_medium=email&amp;utm_term=0_e87fefd0da-b50320a6c5-106742353" target="_blank">https://twitter.com/MoviePass?utm_source=MoviePass+Members&amp;utm_campaign=b50320a6c5-EMAIL_CAMPAIGN_2018_08_15_07_48&amp;utm_medium=email&amp;utm_term=0_e87fefd0da-b50320a6c5-106742353</a>)
+**
+(<a href="https://www.facebook.com/MoviePass/?utm_source=MoviePass+Members&amp;utm_campaign=b50320a6c5-EMAIL_CAMPAIGN_2018_08_15_07_48&amp;utm_medium=email&amp;utm_term=0_e87fefd0da-b50320a6c5-106742353" target="_blank">https://www.facebook.com/MoviePass/?utm_source=MoviePass+Members&amp;utm_campaign=b50320a6c5-EMAIL_CAMPAIGN_2018_08_15_07_48&amp;utm_medium=email&amp;utm_term=0_e87fefd0da-b50320a6c5-106742353</a>)
+**
+(<a href="https://www.instagram.com/moviepass/?utm_source=MoviePass+Members&amp;utm_campaign=b50320a6c5-EMAIL_CAMPAIGN_2018_08_15_07_48&amp;utm_medium=email&amp;utm_term=0_e87fefd0da-b50320a6c5-106742353" target="_blank">https://www.instagram.com/moviepass/?utm_source=MoviePass+Members&amp;utm_campaign=b50320a6c5-EMAIL_CAMPAIGN_2018_08_15_07_48&amp;utm_medium=email&amp;utm_term=0_e87fefd0da-b50320a6c5-106742353</a>)
+**
+(<a href="https://www.moviepass.com?utm_source=MoviePass+Members&amp;utm_campaign=b50320a6c5-EMAIL_CAMPAIGN_2018_08_15_07_48&amp;utm_medium=email&amp;utm_term=0_e87fefd0da-b50320a6c5-106742353" target="_blank">https://www.moviepass.com?utm_source=MoviePass+Members&amp;utm_campaign=b50320a6c5-EMAIL_CAMPAIGN_2018_08_15_07_48&amp;utm_medium=email&amp;utm_term=0_e87fefd0da-b50320a6c5-106742353</a>)
+Copyright &#169; 2018 MoviePass, All rights reserved.
+175 Varick Street, New York, NY 10014
+** unsubscribe from this list
+(<a href="https://moviepass.us13.list-manage.com/unsubscribe?u=66423070296f425eb624814c5&amp;id=e87fefd0da&amp;e=0ba12ac4d0&amp;c=b50320a6c5" target="_blank">https://moviepass.us13.list-manage.com/unsubscribe?u=66423070296f425eb624814c5&amp;id=e87fefd0da&amp;e=0ba12ac4d0&amp;c=b50320a6c5</a>)</pre>BPBPBPB}
+</td>
+</tr>            </table>          </td></tr>        </table></td></tr>    </table>  </td></tr><tr><td height="5" colspan="2" bgcolor="#ffffff"></td></tr>
+  <tr><td>    <table width="100%" cellpadding="1" cellspacing="0" align="center" border="0" bgcolor="#ababab">     <tr><td>       <table width="100%" cellpadding="0" cellspacing="0" align="center" border="0" bgcolor="#ffffff">        <tr><td bgcolor="#ababab" align="left">
+           <b>Attachments:</b>        </td></tr>        <tr><td>          <table width="100%" cellpadding="2" cellspacing="2" align="center" border="0" bgcolor="#dcdcdc"><tr><td>BPBPBPB{<tr><td><a href="../src/view_text.php?passed_id=850&amp;mailbox=INBOX&amp;sort=6&amp;startMessage=0&amp;show_more=0&amp;override_type0=text&amp;override_type1=html&amp;ent_id=2">untitled-[2].html</a>&nbsp;</td><td><small><b>44<small>&nbsp;k</small></b>&nbsp;&nbsp;</small></td><td><small>[ text/html ]&nbsp;</small></td><td><small><b></b></small></td><td><small>&nbsp;<a href="../src/download.php?absolute_dl=true&amp;passed_id=850&amp;mailbox=INBOX&amp;ent_id=2">Download</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="../src/view_text.php?passed_id=850&amp;mailbox=INBOX&amp;sort=6&amp;startMessage=0&amp;show_more=0&amp;override_type0=text&amp;override_type1=html&amp;ent_id=2">View</a></td></tr>
+BPBPBPB}          </td></tr></table>       </td></tr></table>    </td></tr></table>  </td></tr><tr><td height="5" colspan="2" bgcolor="#ffffff"></td></tr></table></body></html>

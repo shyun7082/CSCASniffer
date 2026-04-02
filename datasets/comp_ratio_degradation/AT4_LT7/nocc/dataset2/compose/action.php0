@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>NOCC - Webmail</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="themes/standard/style.css" rel="stylesheet" type="text/css" />
+        <link href="themes/standard/print.css" rel="stylesheet" media="print" type="text/css" />
+        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <script src="js/nocc.js" type="text/javascript"></script>
+    </head>
+    <body dir="ltr">
+        <div id="header">
+            <h1>NOCC</h1>
+        </div>
+        <div id="main">
+<!-- end of $Id: header.php 2682 2016-09-14 14:50:40Z oheil $ -->
+<!-- start of $Id: error.php 2728 2017-11-20 10:22:45Z oheil $ -->
+<div class="error">
+  <table class="errorTable">
+    <tr class="errorTitle">
+      <td>An error occurred</td>
+    </tr>
+    <tr class="errorText">
+      <td>
+        <p>This session has expired.</p>
+        <p>
+		<a href="logout.php?sname=NOCC_f1952fe20628b2b9f2ded2a2eaaf6aa6">Back</a>
+	        </p>
+      </td>
+    </tr>
+  </table>
+</div>
+<!-- end of $Id: error.php 2728 2017-11-20 10:22:45Z oheil $ -->
+<!-- start of $Id: footer.php 2255 2010-06-28 07:46:41Z gerundt $ -->
+    </div>
+        <div id="footer">
+            <a href="http://nocc.sourceforge.net" target="_blank">
+                <img src="themes/standard/img/button.png" id="footerLogo" alt="Powered by NOCC" />
+            </a>
+        </div>
+    </body>
+</html>
+<!-- end of $Id: footer.php 2255 2010-06-28 07:46:41Z gerundt $ -->

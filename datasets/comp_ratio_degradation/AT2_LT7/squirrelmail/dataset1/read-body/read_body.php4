@@ -1,0 +1,450 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="x-dns-prefetch-control" content="off">
+<script type="text/javascript" language="JavaScript">
+<!--
+if (self != top) { try { if (document.domain != top.document.domain) { throw "Clickjacking security violation! Please log out immediately!"; /* this code should never execute - exception should already have been thrown since it's a security violation in this case to even try to access top.document.domain (but it's left here just to be extra safe) */ } } catch (e) { self.location = "/squirrelmail/src/signout.php"; top.location = "/squirrelmail/src/signout.php" } }
+// -->
+</script>
+
+<title>SquirrelMail 1.4.23 [SVN]</title>
+<script language="JavaScript" type="text/javascript">
+<!--
+function sendMDN() {
+    mdnuri=window.location+'&sendreceipt=1';
+    window.location = mdnuri;
+
+}
+
+// -->
+</script>
+
+<!--[if IE 6]>
+<style type="text/css">
+/* avoid stupid IE6 bug with frames and scrollbars */
+body {
+    width: expression(document.documentElement.clientWidth - 30);
+}
+</style>
+<![endif]-->
+
+</head>
+
+<body text="#000000" bgcolor="#ffffff" link="#0000cc" vlink="#0000cc" alink="#0000cc" >
+
+<a name="pagetop"></a>
+<table bgcolor="#ffffff" border="0" width="100%" cellspacing="0" cellpadding="2">
+
+<tr bgcolor="#ababab">
+
+<td align="left">
+
+         Current Folder: <b>INBOX&nbsp;</b>
+      </td>
+<td align="right">
+<b>
+<a href="/squirrelmail/src/signout.php" target="_top">Sign Out</a></b></td>
+   </tr>
+<tr bgcolor="#ffffff">
+
+<td align="left">
+
+<a href="/squirrelmail/src/compose.php?mailbox=INBOX&amp;startMessage=1">Compose</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/addressbook.php">Addresses</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/folders.php">Folders</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/options.php">Options</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/search.php?mailbox=INBOX">Search</a>&nbsp;&nbsp;
+<a href="/squirrelmail/src/help.php">Help</a>&nbsp;&nbsp;
+      </td>
+<td align="right">
+
+<a href="http://squirrelmail.org/" target="_blank">SquirrelMail</a></td>
+   </tr>
+</table><br>
+
+BPBPBPB{<table width="100%" cellpadding="3" cellspacing="0" align="center" border="0" bgcolor="#ababab"><tr><td align="left" width="33%">
+<small><a href="/squirrelmail/src/right_main.php?sort=6&amp;startMessage=1&amp;mailbox=INBOX">Message List</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/right_main.php?unread_passed_id=860&amp;sort=6&amp;startMessage=1&amp;mailbox=INBOX">Unread</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/delete_message.php?mailbox=INBOX&amp;message=860&amp;smtoken=vjbBGkp6XHEi&amp;sort=6&amp;startMessage=1">Delete</a></small></td><td align="center" width="33%"><small>Previous&nbsp;|&nbsp;Next</small></td>
+<td align="right" width="33%" nowrap>
+<small><a href="/squirrelmail/src/compose.php?passed_id=860&amp;mailbox=INBOX&amp;startMessage=1&amp;passed_ent_id=0&amp;smaction=forward">Forward</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/compose.php?passed_id=860&amp;mailbox=INBOX&amp;startMessage=1&amp;passed_ent_id=0&amp;smaction=forward_as_attachment">Forward as Attachment</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/compose.php?passed_id=860&amp;mailbox=INBOX&amp;startMessage=1&amp;passed_ent_id=0&amp;smaction=reply">Reply</a>&nbsp;|&nbsp;<a href="/squirrelmail/src/compose.php?passed_id=860&amp;mailbox=INBOX&amp;startMessage=1&amp;passed_ent_id=0&amp;smaction=reply_all">Reply All</a></small></td></tr></table>BPBPBPB}<table bgcolor="#ababab" width="100%" cellpadding="1" cellspacing="0" border="0" align="center">
+<tr><td height="5" colspan="2" bgcolor="#ffffff"></td></tr><tr><td align="center">
+<table width="100%" cellpadding="0" cellspacing="2" border="0" align="center" bgcolor="#dcdcdc"><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{SubjectBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{$5&#32;Sandwich&#32;|&#32;This&#32;Is&#32;Us&#32;Variety&#32;ShowBPBPBPB}</td>
+
+</tr><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{FromBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{&quot;Nature's&#32;Brew&quot;&#32;&lt;naturesb0@b.mail-zr.com&gt;BPBPBPB}</td>
+
+</tr><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{DateBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{Mon, August 20, 2018 11:20 amBPBPBPB}</td>
+
+</tr><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{ToBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{brandonpaulsen8@gmail.comBPBPBPB}</td>
+
+</tr><tr><td align="right" valign="top" width="20%"><b>BPBPBPB{PriorityBPBPBPB}:&nbsp;&nbsp;</b></td>
+
+<td align="left" valign="top" width="80%">BPBPBPB{NormalBPBPBPB}</td>
+
+</tr><tr>
+<td align="right" valign="middle" width="20%">
+<b>Options:&nbsp;&nbsp;</b></td>
+<td align="left" valign="middle" width="80%">
+<small><a href="/squirrelmail/src/view_header.php?mailbox=INBOX&amp;passed_id=860&amp;passed_ent_id=0">View Full Header</a>&nbsp;|&nbsp;<script language="javascript" type="text/javascript">
+<!--
+  function printFormat() {
+    window.open("../src/printer_friendly_main.php?passed_ent_id=0&mailbox=INBOX&passed_id=860&view_unsafe_images=","Print","width=800,height=600");
+  }
+// -->
+</script>
+<a href="javascript:printFormat();">View Printable Version</a>
+BPBPBPB{&nbsp;|&nbsp;<a href="download.php?absolute_dl=true&amp;passed_id=860&amp;ent_id=1&amp;mailbox=INBOX&amp;sort=6&amp;startMessage=1&amp;show_more=0&amp;passed_ent_id=0">Download this as a file</a>BPBPBPB}</small></td>
+</tr>
+</table></td></tr><tr><td height="5" colspan="2" bgcolor="#ffffff"></td></tr>
+</table><table width="100%" cellpadding="0" cellspacing="0" align="center" border="0">  <tr><td>    <table width="100%" cellpadding="1" cellspacing="0" align="center" border="0" bgcolor="#ababab">      <tr><td>        <table width="100%" cellpadding="3" cellspacing="0" align="center" border="0">          <tr bgcolor="#ffffff"><td><table align="left" cellpadding="1" cellspacing="5" border="0">
+              <tr><td align="left"><br />BPBPBPB{<pre>* {
+    margin:0;
+    padding:0;
+  }
+
+  body {
+    -webkit-font-smoothing:antialiased;
+    -webkit-text-size-adjust:none;
+    width: 100% !important;
+    height: 100%;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  ol {
+    margin-left: 20px;
+  }
+
+  ul {
+    margin-left: 20px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  body.fix table.contenttable {
+    margin: 20px auto 0 auto;
+  }
+  body.fix table.full {
+    width: 600px;
+  }
+  body.fix table.quarter {
+    width: 150px;
+  }
+  body.fix table.threequarters {
+    width: 450px;
+  }
+  body.fix table.half{
+    width: 300px;
+  }
+  body.fix table.third {
+    width: 200px;
+  }
+  body.fix table.twothirds {
+    width: 400px;
+  }
+  .smalldevice {
+    width: 600;
+  }
+  @media only screen and (max-width: 640px) {
+    body.fix td.quarter {
+      width: 50% !important;
+    }
+    body.fix td.quarterawk {
+      width: 100% !important;
+    }
+    body.fix td.threequarters {
+      width: 50% !important;
+    }
+    body.fix td.half {
+      width: 50% !important;
+    }
+    body.fix td.halfawk {
+      width: 100% !important;
+    }
+    body.fix td.third {
+      width: 100% !important;
+      display: block !important;
+    }
+    body.fix td.twothirds {
+      width: 100% !important;
+      display: block !important;
+    }
+  }
+  @media only screen and (max-width: 420px) {
+    body.fix table.contenttable {
+      width: 100% !important;
+      max-width:400px !important;
+      margin: 0 auto !important;
+      clear: both !important;
+    }
+    body.fix table.spacingtable {
+      max-width:400px !important;
+      margin: 0 auto !important;
+      clear: both !important;
+    }
+    body.fix td.full, body.fix td.quarter, body.fix td.quarterawk, body.fix
+td.threequarters, body.fix td.half, body.fix td.halfawk, body.fix td.third,
+body.fix td.twothirds {
+      width: 100% !important;
+      display: block !important;
+    }
+    body.fix table.headertable {
+      display: none !important;
+    }
+    .smalldevice {
+      width: 400px !important;
+    }
+    img.uploaded-image {
+      max-width: 100% !important;
+    }
+  }
+  @media only screen and (max-width: 380px) {
+    body.fix table.contenttable {
+      width: 100% !important;
+      max-width:360px !important;
+      margin: 0 auto !important;
+      clear: both !important;
+    }
+    body.fix table.spacingtable {
+      width: 100% !important;
+      max-width:360px !important;
+      margin: 0 auto !important;
+      clear: both !important;
+    }
+    body.fix td.full, body.fix td.quarter, body.fix td.quarterawk, body.fix
+td.threequarters, body.fix td.half, body.fix td.halfawk, body.fix td.third,
+body.fix td.twothirds {
+      width: 100% !important;
+      display: block !important;
+    }
+    body.fix table.headertable {
+      display: none !important;
+    }
+    .smalldevice {
+      width: 360px !important;
+    }
+    img.uploaded-image {
+      max-width: 100% !important;
+    }
+  }
+  @media only screen and (max-width: 340px) {
+    body.fix table.contenttable {
+      width: 100% !important;
+      max-width:320px !important;
+      margin: 0 auto !important;
+      clear: both !important;
+    }
+    body.fix table.spacingtable {
+      max-width:320px !important;
+      margin: 0 auto !important;
+      clear: both !important;
+    }
+    body.fix td.full, body.fix td.quarter, body.fix td.quarterawk, body.fix
+td.threequarters, body.fix td.half, body.fix td.halfawk, body.fix td.third,
+body.fix td.twothirds {
+      width: 100% !important;
+      display: block !important;
+    }
+    body.fix table.headertable {
+      display: none !important;
+    }
+    .smalldevice {
+      width: 320px !important;
+    }
+    img.uploaded-image {
+      max-width: 100% !important;
+    }
+  }
+  
+  
+
+
+  
+  This Is Us - Variety Show @ Nature&amp;#39;s Brew
+  
+  
+  
+    
+      
+    
+  
+
+  
+  
+    
+      
+        
+          
+            
+            
+              
+                
+    
+        
+            
+                
+                    
+  
+    
+      
+        
+          
+        
+      
+    
+  
+
+                
+            
+        
+    
+
+              
+            
+            
+            
+              
+                
+    
+        
+            
+                
+                    
+  
+    
+      
+        This week&amp;#39;s $5 sandwich is an old favorite: the Italian! It&amp;#39;s loaded
+with genoa salami, spicy capicola, mortadella, fresh romaine, tomato,
+pickled red onion and our pomegranate parsley spread. Get it all week for
+just $5!Our Egg Sandwich of the Week is the Mediterranean... two fried eggs,
+ham, bacon, feta, fresh tomato, red onion, and olive spread. Join us this
+Tuesday, August 21st from 6:30p - 8p for some non-stop laughs with &amp;#34;This
+Is Us - Variety Show&amp;#34; including special musical
+guests!performing:Stephanie Federoff (Music)Bryan Vokey (Comic)Bruce Gray
+(Comic)Akeem Woods (Comic)Justin Lawson (Comic)Runnner (Music)hosted
+by:Alison Sherberg &amp;amp; Tommy O&#8217;Neill&#65279;&#8226; FREE EVENT &#8226;&#8226; FULL FOOD MENU + BEER
+&amp;amp; WINE AVAILABLE&#8226;Can&amp;#39;t wait to see you there!more
+info...facebook.com/events
+      
+    
+  
+
+  
+    
+      
+        
+          
+        
+      
+    
+  
+
+  
+    
+      
+        
+          
+        
+      
+    
+  
+
+                
+            
+        
+    
+
+              
+            
+            
+            
+              
+                
+              
+            
+            
+            
+              
+                
+              
+            
+            
+            
+              
+                
+              
+            
+            
+            
+              
+                
+              
+            
+            
+            
+              
+                
+              
+            
+            
+            
+              
+                
+              
+            
+            
+          
+        
+      
+    
+  
+
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+    
+      
+        
+          
+            
+              
+                You&amp;#39;re receiving this email because you&amp;#39;ve subscribed to
+service from Nature&amp;#39;s Brew.
+              
+            
+            
+              
+                2316 S UNION AVE, LOS ANGELES, CA 90007-1843
+              
+            
+            
+              
+                If you do not wish to receive any more emails you may unsubscribe.</pre>BPBPBPB}
+</td>
+</tr>            </table>          </td></tr>        </table></td></tr>    </table>  </td></tr><tr><td height="5" colspan="2" bgcolor="#ffffff"></td></tr>
+</table></body></html>
